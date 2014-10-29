@@ -1,30 +1,37 @@
 package dailyMailPackage.jbehave;
 
 import net.thucydides.core.annotations.Steps;
+
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
 import dailyMailPackage.steps.EndUserSteps;
 
+/**
+ * @author srinivasa.kuncha
+ *
+ */
 public class DefinitionSteps {
 
     @Steps
     EndUserSteps endUser;
-
-    @Given("the user is on the Wikionary home page")
+   
+    @Given("Sales rep is on the Salesfoce home page")
     public void givenTheUserIsOnTheWikionaryHomePage() {
         endUser.is_the_home_page();
     }
-
-    @When("the user looks up the definition of the word '$word'")
-    public void whenTheUserLooksUpTheDefinitionOf(String word) {
-        endUser.looks_for(word);
+    @When("Sales rep login to glue as Mail user by supplying $UserName and $Password")
+    public void userSupplyLoginCredentials(String username, String password) {
+    	endUser.supplyLoginCredientials(username, password);
     }
 
-    @Then("they should see the definition '$definition'")
-    public void thenTheyShouldSeeADefinitionContainingTheWords(String definition) {
-        endUser.should_see_definition(definition);
+    @When("Sales rep search for customer account and place order using csv $file")
+    public void readCustomerData(String file){
+    	endUser.migrationDataFile(file);
     }
-
+    @Then("Sales rep should see customer account with associated orders in glue")
+    public void verifyOrderID(){
+    	endUser.verfiyOrdersuccessfullyPlaced();
+    }
 }
