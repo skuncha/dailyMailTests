@@ -132,8 +132,10 @@ public class GlueAccountPage extends PageObject {
 								String selectionType = record.get("agencyType");
 								if (selectionType.equalsIgnoreCase("Booking Agency"))
 								{
+									try{
 									selectAgencyType().selectByVisibleText(selectionType);
 										waitFor(1).second();
+									}catch (Exception e){}	
 									clickNext().click();
 										waitFor(2).seconds();
 									bookingSelection().selectByVisibleText(record.get("bookingAgency"));
