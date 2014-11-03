@@ -134,7 +134,7 @@ public class GlueAccountPage extends PageObject {
 								{
 									try{
 									selectAgencyType().selectByVisibleText(selectionType);
-										waitFor(1).second();
+										waitFor(2).second();
 									}catch (Exception e){}	
 									clickNext().click();
 										waitFor(2).seconds();
