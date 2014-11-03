@@ -102,6 +102,29 @@ public class GlueAccountPage extends PageObject {
 					waitFor(12).seconds();
 					createDirectOrder().click();
 					waitFor(4).seconds();
+					
+						if (str.equalsIgnoreCase("Brand"))
+						{
+								String selectionType = record.get("billingSelection");
+								if (selectionType.equalsIgnoreCase("Via Agency"))
+								{
+									selectAgencyType().selectByVisibleText(selectionType);
+										waitFor(1).second();
+									clickNext().click();
+									bookingSelection().selectByVisibleText(record.get("bookingAgency"));
+										waitFor(1).seconds();
+									clickNext().click();
+									selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
+										waitFor(1).second();
+									clickNext().click();
+								}
+								else
+								{
+									billingOption().selectByVisibleText("Direct");
+										waitFor(1).second();
+									clickNext().click();
+								}
+						}
 						if (str.equalsIgnoreCase("Client") || str.equalsIgnoreCase("DMGT Group"))
 						{
 								String selectionType = record.get("agencyType");
@@ -124,12 +147,7 @@ public class GlueAccountPage extends PageObject {
 									clickNext().click();
 								}
 						}
-						if (str.equalsIgnoreCase("Brand")){
-							billingOption().selectByVisibleText("Direct");
-							waitFor(1).second();
-							clickNext().click();
-						}
-						if (str.equalsIgnoreCase("Direct Advertiser") || str.equalsIgnoreCase("Charity")) 
+						if (str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Charity")) 
 						 {
 									String billingType = record.get("billingSelection");
 									if (billingType.equalsIgnoreCase("Direct"))
@@ -163,7 +181,7 @@ public class GlueAccountPage extends PageObject {
 												clickNext().click();
 											}
 									}
-						}
+						 }
 						waitFor(2).seconds();
 					contactSelection().selectByVisibleText(record.get("customerContact"));
 						waitFor(1).seconds();
@@ -193,6 +211,7 @@ public class GlueAccountPage extends PageObject {
 			    	 orderUrgentNote().sendKeys(record.get("urgentNote"));
 			    	 order = orderID().getText();
 			    	 waitFor(1).second();
+			    	 Thucydides.takeScreenshot();
 /************************************ Supply Package Details*****************************************/
 			    	 addPackage().click();  	
 			    	 		waitFor(4).seconds();
@@ -203,13 +222,13 @@ public class GlueAccountPage extends PageObject {
 				     selectSection().selectByVisibleText(record.get("section"));
 				    	 	waitFor(5).seconds();
 				     selectZone().selectByVisibleText(record.get("zones"));
-				    	 	waitFor(5).seconds();
+				    	 	waitFor(6).seconds();
 				     selectSubSection().selectByVisibleText(record.get("subsection"));
 				    		waitFor(6).seconds();
 				     productionNote().sendKeys(record.get("productionNote"));
-						 	waitFor(1).seconds();
+						 	waitFor(2).seconds();
 				     selectModule().selectByVisibleText(record.get("module"));
-					    	waitFor(4).seconds();
+					    	waitFor(5).seconds();
 					 String zoneType = record.get("zones");
 					 		
 					 		 rcs = record.get("regionalCopySplit");
