@@ -25,6 +25,7 @@ public class GlueAccountPage extends PageObject {
 	long timeNow = System.currentTimeMillis();
 	String url = "https://dmgsalescloud--prodmirror.cs8.my.salesforce.com/";
 	String order,rowNum;
+	String billingType = "Agency";
 	static String rcs;
     @FindBy(xpath="//div/input")
     private WebElementFacade searchTerms;
@@ -108,7 +109,7 @@ public class GlueAccountPage extends PageObject {
 								String selectionType = record.get("billingSelection");
 								if (selectionType.equalsIgnoreCase("Via Agency"))
 								{
-									selectAgencyType().selectByVisibleText(selectionType);
+									billingOption().selectByVisibleText(billingType);
 										waitFor(1).second();
 									clickNext().click();
 									bookingSelection().selectByVisibleText(record.get("bookingAgency"));
