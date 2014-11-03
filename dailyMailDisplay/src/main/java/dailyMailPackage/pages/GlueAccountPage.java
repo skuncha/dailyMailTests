@@ -114,8 +114,9 @@ public class GlueAccountPage extends PageObject {
 									bookingSelection().selectByVisibleText(record.get("bookingAgency"));
 										waitFor(1).seconds();
 									clickNext().click();
+									waitFor(2).second();
 									selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
-										waitFor(1).second();
+										waitFor(2).second();
 									clickNext().click();
 								}
 								else
@@ -133,11 +134,13 @@ public class GlueAccountPage extends PageObject {
 									selectAgencyType().selectByVisibleText(selectionType);
 										waitFor(1).second();
 									clickNext().click();
+										waitFor(2).seconds();
 									bookingSelection().selectByVisibleText(record.get("bookingAgency"));
-										waitFor(1).seconds();
 									clickNext().click();
+										waitFor(2).seconds();
 									selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
 										waitFor(1).second();
+										
 									clickNext().click();
 								}
 								else 
