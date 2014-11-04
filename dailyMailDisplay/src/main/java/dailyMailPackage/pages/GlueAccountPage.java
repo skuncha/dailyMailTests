@@ -281,7 +281,6 @@ public class GlueAccountPage extends PageObject {
 							 		String ABcopySplitValue = record.get("copySplit");
 							 		if (ABcopySplitValue.equalsIgnoreCase("Y"))
 							 		{
-							 			
 							 			ABCopySplit().click();
 							 			waitFor(2).second();
 							 		}
