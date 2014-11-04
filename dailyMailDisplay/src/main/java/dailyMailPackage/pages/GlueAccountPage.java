@@ -1,6 +1,7 @@
 package dailyMailPackage.pages;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
 import net.thucydides.core.Thucydides;
@@ -85,244 +86,255 @@ public class GlueAccountPage extends PageObject {
     	waitABit(1000);
     	loginbutton().click();
     }
-    public void readfile(String fileloc){
+    public void readfile(String fileloc) throws IOException{
     	
 		File filePath = new File(fileloc);
 		if (filePath.isFile()) {
-			System.out.println("\n      OREDRS THAT ARE SUCCESSFULLY CREATED ARE ");
+			System.out.println("\n");
+			System.out.println("         OREDRS THAT ARE SUCCESSFULLY CREATED ARE ");
 			String file = filePath.getAbsolutePath();
-			try {
-				CSVTestDataSource testDataSrc = new CSVTestDataSource(file);
-				for (Map<String, String> record : testDataSrc.getData()) {
-					waitFor(5).seconds();
-					String str = record.get("accountType");
-					String clinetuniqueID = record.get("uniqueID");
-					String clientURL = url.concat(clinetuniqueID);
-					/*System.out.println("client URL is -------- :  "+clientURL);*/
-					getDriver().get(clientURL);
-					waitFor(12).seconds();
-					createDirectOrder().click();
-					waitFor(4).seconds();
-					
-						if (str.equalsIgnoreCase("Brand"))
-						{
-								String selectionType = record.get("billingSelection");
-								if (selectionType.equalsIgnoreCase("Via Agency"))
+			CSVTestDataSource testDataSrc = new CSVTestDataSource(file);
+				for (Map<String, String> record : testDataSrc.getData()) 
+				{
+						try{
+							waitFor(5).seconds();
+							String str = record.get("accountType");
+							rowNum = record.get("recordNo");
+							String clinetuniqueID = record.get("uniqueID");
+							String clientURL = url.concat(clinetuniqueID);
+							/*System.out.println("client URL is -------- :  "+clientURL);*/
+							getDriver().get(clientURL);
+							waitFor(12).seconds();
+							Thucydides.takeScreenshot();
+							createDirectOrder().click();
+							waitFor(4).seconds();
+							
+								if (str.equalsIgnoreCase("Brand"))
 								{
-									billingOption().selectByVisibleText(billingType);
-										waitFor(1).second();
-									clickNext().click();
-									bookingSelection().selectByVisibleText(record.get("bookingAgency"));
-										waitFor(1).seconds();
-									clickNext().click();
-									waitFor(2).second();
-									selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
-										waitFor(2).second();
-									clickNext().click();
+										String selectionType = record.get("billingSelection");
+										if (selectionType.equalsIgnoreCase("Via Agency"))
+										{
+											billingOption().selectByVisibleText(billingType);
+												waitFor(1).second();
+											clickNext().click();
+											bookingSelection().selectByVisibleText(record.get("bookingAgency"));
+												waitFor(1).seconds();
+											clickNext().click();
+											waitFor(2).second();
+											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
+												waitFor(2).second();
+											clickNext().click();
+										}
+										else
+										{
+											billingOption().selectByVisibleText("Direct");
+												waitFor(1).second();
+											clickNext().click();
+										}
 								}
-								else
+								if (str.equalsIgnoreCase("Client") || str.equalsIgnoreCase("DMGT Group"))
 								{
-									billingOption().selectByVisibleText("Direct");
-										waitFor(1).second();
-									clickNext().click();
+										String selectionType = record.get("agencyType");
+										if (selectionType.equalsIgnoreCase("Booking Agency"))
+										{
+												waitFor(2).seconds();
+											bookingSelection().selectByVisibleText(record.get("bookingAgency"));
+											clickNext().click();
+												waitFor(2).seconds();
+											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
+												waitFor(1).second();
+											clickNext().click();
+											waitFor(2).second();
+										}
+										else 
+										{ 
+											billingRef().selectByVisibleText(record.get("billingAgency"));
+												waitFor(1).second();
+											clickNext().click();
+										}
 								}
-						}
-						if (str.equalsIgnoreCase("Client") || str.equalsIgnoreCase("DMGT Group"))
-						{
-								String selectionType = record.get("agencyType");
-								if (selectionType.equalsIgnoreCase("Booking Agency"))
-								{
-									try{
-									selectAgencyType().selectByVisibleText(selectionType);
-										waitFor(2).second();
-									}catch (Exception e){}	
-									clickNext().click();
-										waitFor(2).seconds();
-									bookingSelection().selectByVisibleText(record.get("bookingAgency"));
-									clickNext().click();
-										waitFor(2).seconds();
-									selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
-										waitFor(1).second();
-										
-									clickNext().click();
-								}
-								else 
-								{ 
-									billingRef().selectByVisibleText(record.get("billingAgency"));
-										waitFor(1).second();
-									clickNext().click();
-								}
-						}
-						if (str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Charity")) 
-						 {
-									String billingType = record.get("billingSelection");
-									if (billingType.equalsIgnoreCase("Direct"))
-									{
-										billingSelection().selectByVisibleText(billingType);
-											waitFor(1).second();
-										clickNext().click();
-									}
-									else 
-									{
-										billingSelection().selectByVisibleText(billingType);
-											waitFor(1).second();
-										clickNext().click();
-											String selectionType = record.get("agencyType");
-											if (selectionType.equalsIgnoreCase("Booking Agency"))
+								if (str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Charity")) 
+								 {
+											String billingType = record.get("billingSelection");
+											if (billingType.equalsIgnoreCase("Direct"))
 											{
-												billingOption().selectByVisibleText(billingType);
-												waitFor(1).second();
-												clickNext().click();
-												bookingSelection().selectByVisibleText(record.get("bookingAgency"));
-													waitFor(1).seconds();
-												clickNext().click();
-												selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
-												waitFor(1).second();
-												clickNext().click();
-											}
-											else 
-											{ 
-												billingRef().selectByVisibleText(record.get("billingAgency"));
+												billingSelection().selectByVisibleText(billingType);
 													waitFor(1).second();
 												clickNext().click();
 											}
-									}
-						 }
-						waitFor(2).seconds();
-					contactSelection().selectByVisibleText(record.get("customerContact"));
-						waitFor(1).seconds();
-					clickNext().click();
-						waitFor(1).seconds();
-					finish().click();
-					
-/************** Launch OrderPlugin and Create Order*************************************************/	
-					
-					 	 waitFor(11).seconds();
-			     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
-			     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
-			     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
-						 String acode = secondpartsplit[0];
-						 String add = "&clientid=";
-						 acode =record.get("authCode");
-						 String date = record.get("addDate");
-						 /*String sampleURL = "https://pre-prod.cci-webaccess-dmgmedia.co.uk/salesforce/plugin/orders/create?userid=srinivasa.kuncha&group=Mail Display Sales&profile=MD Manager&accountid=";*/ 
-						 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
-						 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
-						 getDriver().get(OrderURL);
-						 waitFor(9).seconds();
-						  
-/************************************ Supply Order Details ******************************************/
-			    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
-			    	 orderNote().sendKeys(record.get("orderNote"));
-			    	 orderUrgentNote().sendKeys(record.get("urgentNote"));
-			    	 order = orderID().getText();
-			    	 waitFor(1).second();
-			    	 Thucydides.takeScreenshot();
-/************************************ Supply Package Details*****************************************/
-			    	 addPackage().click();  	
-			    	 		waitFor(4).seconds();
-			    	 addPackage().click(); 
-			    	 		waitFor(3).seconds();
-				     selectPublication().selectByVisibleText(record.get("publication"));
-				    	 	waitFor(3).seconds();
-				     selectSection().selectByVisibleText(record.get("section"));
-				    	 	waitFor(5).seconds();
-				     selectZone().selectByVisibleText(record.get("zones"));
-				    	 	waitFor(6).seconds();
-				     selectSubSection().selectByVisibleText(record.get("subsection"));
-				    		waitFor(6).seconds();
-				     productionNote().sendKeys(record.get("productionNote"));
-						 	waitFor(2).seconds();
-				     selectModule().selectByVisibleText(record.get("module"));
-					    	waitFor(5).seconds();
-					 String zoneType = record.get("zones");
-					 		
-					 		 rcs = record.get("regionalCopySplit");
-					 		if (rcs.equalsIgnoreCase("England & Walescot & N Ire")){
-					 			rcs = "England & Wales\\Scot & N Ire";
-					 		}
-					 		if (rcs.equalsIgnoreCase("England & Walescot Ireire")){
-					 			rcs = "England & Wales\\Scot\\N Ire\\Eire";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Nat ex Lonon Only")){
-					 			rcs = "Nat ex Lon\\Lon Only";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Nat ex N Ire and Scot Ire Onlycot")){
-					 			rcs = "Nat ex N Ire and Scot\\N Ire Only\\Scot";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Nat ex N Ire Ire Only")){
-					 			rcs = "Nat ex N Ire\\N Ire Only";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Nat ex Scotcot Only")){
-					 			rcs = "Nat ex Scot\\Scot Only";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Nthth")){
-					 			rcs = "Nth\\Sth";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Nththcot")){
-					 			rcs = "Nth\\Sth\\Scot";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Nth ex Scotcot Only")){
-					 			rcs = "Nth ex Scot\\Scot Only";
-					 		}
-					 		if (rcs.equalsIgnoreCase("Sth ex Lonon Only")){
-					 			rcs = "Sth ex Lon\\Lon Only";
-					 		}
-					 		/*System.out.println("     regional Copy Split supplied is :  "+rcs);*/
-					 		if (zoneType.equalsIgnoreCase("01. National") || zoneType.equalsIgnoreCase("02. North") || zoneType.equalsIgnoreCase("03. South"))
-					 		{
-						 		if (!" ".equals(rcs))
-						 		{
-						 			 waitFor(1).second();
-						 			 regionalCopySplit().selectByVisibleText(rcs);
-									 waitFor(2).seconds();
-						 		}	
-						 	}
-					 		String ABcopySplitValue = record.get("copySplit");
-					 		if (ABcopySplitValue.equalsIgnoreCase("Y"))
-					 		{
-					 			
-					 			ABCopySplit().click();
-					 			waitFor(2).second();
-					 		}
-			    	 Thucydides.takeScreenshot();
-			    	 /*saveOrder().click();
-			    	 		waitFor(10).seconds();*/
-			    	 
-/************************************ Supply Price Details ******************************************/
-			    	 selectPrice().click();
-			    	 		waitFor(1).second();
-			    	 selectRevenue().sendKeys(record.get("revenue"));
-			    	 		waitFor(1).second();
-			    	 updateRevenue().click(); 
-			    	 		waitFor(2).seconds();
-			    	 Thucydides.takeScreenshot();	
-/************************************ Accept Order *************************************************/	
-			    	 acceptOrder().click();
-			    	 if(str.equalsIgnoreCase("Private Advertiser") || str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Brand") || str.equalsIgnoreCase("Charity"))  {
-			    		 	waitFor(1).seconds();
-			    		 	try {
-						    	 WebElement prepaymentwindow1 = getDriver().switchTo().activeElement();
-						    	 		waitFor(1).second();
-						    	 prepaymentwindow1.findElement(By.xpath("//input[@value='Prepay']")).click();
-						    	 		waitFor(3).seconds();
-						    	 WebElement prepaymentwindow2 = getDriver().switchTo().activeElement();
-						    	 		waitFor(1).second(); 
-						    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();
-			    		 	} catch (Exception e) {}
-			    	 }
-			    	 rowNum = record.get("recordNo");
-			    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
-			    	 waitFor(8).seconds();
-			    	 try {
-				    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
-				    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
-				    	      getDriver().switchTo().alert().accept();
-				    	 }
-				    	 catch (Exception e) {}
+											else 
+											{
+												billingSelection().selectByVisibleText(billingType);
+													waitFor(1).second();
+												clickNext().click();
+													String selectionType = record.get("agencyType");
+													if (selectionType.equalsIgnoreCase("Booking Agency"))
+													{
+														waitFor(2).second();
+														bookingSelection().selectByVisibleText(record.get("bookingAgency"));
+															waitFor(1).seconds();
+														clickNext().click();
+														waitFor(2).second();
+														selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
+														waitFor(1).second();
+														clickNext().click();
+														waitFor(2).second();
+													}
+													else 
+													{ 
+														billingRef().selectByVisibleText(record.get("billingAgency"));
+															waitFor(1).second();
+														clickNext().click();
+													}
+											}
+								 }
+								waitFor(2).seconds();
+							contactSelection().selectByVisibleText(record.get("customerContact"));
+								waitFor(1).seconds();
+							clickNext().click();
+								waitFor(1).seconds();
+							finish().click();
+							
+		/************** Launch OrderPlugin and Create Order*************************************************/	
+							
+							 	 waitFor(12).seconds();
+					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
+					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
+					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
+								 String acode = secondpartsplit[0];
+								 String add = "&clientid=";
+								 acode =record.get("authCode");
+								 String date = record.get("addDate");
+								 /*String sampleURL = "https://pre-prod.cci-webaccess-dmgmedia.co.uk/salesforce/plugin/orders/create?userid=srinivasa.kuncha&group=Mail Display Sales&profile=MD Manager&accountid=";*/ 
+								 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
+								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
+								 getDriver().get(OrderURL);
+								 waitFor(12).seconds();
+								  
+		/************************************ Supply Order Details ******************************************/
+					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
+					    	 orderNote().sendKeys(record.get("orderNote"));
+					    	 orderUrgentNote().sendKeys(record.get("urgentNote"));
+					    	 orderSalesRepId().sendKeys("Michael Burgess");
+					    	 order = orderID().getText();
+					    	 waitFor(1).second();
+					    	 Thucydides.takeScreenshot();
+		/************************************ Supply Package Details*****************************************/
+					    	 addPackage().click();  	
+					    	 		waitFor(4).seconds();
+					    	 addPackage().click(); 
+					    	 		waitFor(6).seconds();
+						     selectPublication().selectByVisibleText(record.get("publication"));
+						    	 	waitFor(3).seconds();
+						     selectSection().selectByVisibleText(record.get("section"));
+						    	 	waitFor(5).seconds();
+						     selectZone().selectByVisibleText(record.get("zones"));
+						    	 	waitFor(6).seconds();
+						     selectSubSection().selectByVisibleText(record.get("subsection"));
+						    		waitFor(6).seconds();
+						     productionNote().sendKeys(record.get("productionNote"));
+								 	waitFor(2).seconds();
+						     selectModule().selectByVisibleText(record.get("module"));
+							    	waitFor(5).seconds();
+							 String zoneType = record.get("zones");
+							 		
+							 		 rcs = record.get("regionalCopySplit");
+							 		if (rcs.equalsIgnoreCase("England & Walescot & N Ire")){
+							 			rcs = "England & Wales\\Scot & N Ire";
+							 		}
+							 		if (rcs.equalsIgnoreCase("England & Walescot Ireire")){
+							 			rcs = "England & Wales\\Scot\\N Ire\\Eire";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Nat ex Lonon Only")){
+							 			rcs = "Nat ex Lon\\Lon Only";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Nat ex N Ire and Scot Ire Onlycot")){
+							 			rcs = "Nat ex N Ire and Scot\\N Ire Only\\Scot";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Nat ex N Ire Ire Only")){
+							 			rcs = "Nat ex N Ire\\N Ire Only";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Nat ex Scotcot Only")){
+							 			rcs = "Nat ex Scot\\Scot Only";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Nthth")){
+							 			rcs = "Nth\\Sth";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Nththcot")){
+							 			rcs = "Nth\\Sth\\Scot";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Nth ex Scotcot Only")){
+							 			rcs = "Nth ex Scot\\Scot Only";
+							 		}
+							 		if (rcs.equalsIgnoreCase("Sth ex Lonon Only")){
+							 			rcs = "Sth ex Lon\\Lon Only";
+							 		}
+							 		if (zoneType.equalsIgnoreCase("01. National") || zoneType.equalsIgnoreCase("02. North") || zoneType.equalsIgnoreCase("03. South"))
+							 		{
+								 		if (!" ".equals(rcs))
+								 		{
+								 			 waitFor(1).second();
+								 			 regionalCopySplit().selectByVisibleText(rcs);
+											 waitFor(2).seconds();
+								 		}	
+								 	}
+							 		String ABcopySplitValue = record.get("copySplit");
+							 		if (ABcopySplitValue.equalsIgnoreCase("Y"))
+							 		{
+							 			
+							 			ABCopySplit().click();
+							 			waitFor(2).second();
+							 		}
+					    	 Thucydides.takeScreenshot();
+					    	 /*saveOrder().click();
+					    	 		waitFor(10).seconds();*/
+					    	 
+		/************************************ Supply Price Details ******************************************/
+					    	 selectPrice().click();
+					    	 		waitFor(1).second();
+					    	 selectRevenue().sendKeys(record.get("revenue"));
+					    	 		waitFor(1).second();
+					    	 updateRevenue().click(); 
+					    	 		waitFor(4).seconds();
+					    	 Thucydides.takeScreenshot();	
+		/************************************ Accept Order *************************************************/	
+					    	 acceptOrder().click();
+					    	 waitFor(2).seconds();
+					    	 if(str.equalsIgnoreCase("Private Advertiser") || str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Brand") || str.equalsIgnoreCase("Charity"))  {
+					    		 	waitFor(1).seconds();
+					    		 	try {
+								    	 WebElement prepaymentwindow1 = getDriver().switchTo().activeElement();
+								    	 		waitFor(1).second();
+								    	 prepaymentwindow1.findElement(By.xpath("//input[@value='Prepay']")).click();
+								    	 		waitFor(3).seconds();
+								    	 WebElement prepaymentwindow2 = getDriver().switchTo().activeElement();
+								    	 		waitFor(1).second(); 
+								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();
+					    		 	} catch (Exception e) {}
+					    	 }
+					    	 waitFor(8).seconds();
+						    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
+						    	 
+								    	 try {
+									    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
+									    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
+									    	      getDriver().switchTo().alert().accept();
+									    	 }
+									    	 catch (Exception e) {}
 /*************************************************************************************************/
+					} catch (Exception e)
+						{
+									e.getCause();
+									System.out.println("       " +rowNum + " ---> " + "Sorry there is an issue with DATA MAPPING" );
+									Thucydides.takeScreenshot();
+									 try {
+								    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
+								    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
+								    	      getDriver().switchTo().alert().accept();
+								    	 }
+								    	 catch (Exception x) {}
+						}
 				} 
-		} catch (Exception e){e.printStackTrace();}
 	}		
 }
 }

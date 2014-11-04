@@ -1,5 +1,7 @@
 package dailyMailPackage.steps;
 
+import java.io.IOException;
+
 import net.thucydides.core.steps.ScenarioSteps;
 import dailyMailPackage.pages.GlueAccountPage;
 
@@ -20,7 +22,7 @@ public class EndUserSteps extends ScenarioSteps {
         dictionaryPage.open();
     }
 
-    public void migrationDataFile(String file){
+    public void migrationDataFile(String file) throws IOException{
     	    	
     	dictionaryPage.readfile(file);
     }

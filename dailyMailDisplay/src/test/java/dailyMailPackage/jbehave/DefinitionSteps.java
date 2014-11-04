@@ -1,5 +1,7 @@
 package dailyMailPackage.jbehave;
 
+import java.io.IOException;
+
 import net.thucydides.core.annotations.Steps;
 
 import org.jbehave.core.annotations.Given;
@@ -27,7 +29,7 @@ public class DefinitionSteps {
     }
 
     @When("Sales rep search for customer account and place order using csv $file")
-    public void readCustomerData(String file){
+    public void readCustomerData(String file) throws IOException{
     	endUser.migrationDataFile(file);
     }
     @Then("Sales rep should see customer account with associated orders in glue")
