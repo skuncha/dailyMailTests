@@ -219,7 +219,7 @@ public class GlueAccountPage extends PageObject {
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
 					    	 orderUrgentNote().sendKeys(record.get("urgentNote"));
-					    	 orderSalesRepId().sendKeys("Michael Burgess");
+//					    	 orderSalesRepId().sendKeys("Michael Burgess");
 					    	 order = orderID().getText();
 					    	 waitFor(1).second();
 					    	 Thucydides.takeScreenshot();
@@ -328,7 +328,7 @@ public class GlueAccountPage extends PageObject {
 					} catch (Exception e)
 						{
 									e.getCause();
-									System.out.println("       " +rowNum + " ---> " + "Sorry there is an issue with DATA MAPPING" );
+									System.out.println("       " +rowNum + " ---> " + "Test" );
 									Thucydides.takeScreenshot();
 									 try {
 								    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
