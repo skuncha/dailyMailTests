@@ -224,7 +224,7 @@ public class GlueAccountPage extends PageObject {
 					    	 waitFor(1).second();
 					    	 Thucydides.takeScreenshot();
 		/************************************ Supply Package Details*****************************************/
-					    	 addPackage().click();  	
+					    	/* addPackage().click();  	
 					    	 		waitFor(4).seconds();
 					    	 addPackage().click(); 
 					    	 		waitFor(6).seconds();
@@ -289,10 +289,10 @@ public class GlueAccountPage extends PageObject {
 							 			waitFor(2).second();
 							 		}
 					    	 Thucydides.takeScreenshot();
-					    	 /*saveOrder().click();
-					    	 		waitFor(10).seconds();*/
+					    	 saveOrder().click();
+					    	 		waitFor(10).seconds();
 					    	 
-		/************************************ Supply Price Details ******************************************/
+		*//************************************ Supply Price Details ******************************************//*
 					    	 selectPrice().click();
 					    	 		waitFor(1).second();
 					    	 selectRevenue().sendKeys(record.get("revenue"));
@@ -300,9 +300,9 @@ public class GlueAccountPage extends PageObject {
 					    	 updateRevenue().click(); 
 					    	 		waitFor(4).seconds();
 					    	 Thucydides.takeScreenshot();	
-		/************************************ Accept Order *************************************************/	
-					    	 acceptOrder().click();
-					    	 waitFor(2).seconds();
+		*//************************************ Accept Order *************************************************//*	
+					    	 acceptOrder().click();*/
+					    	 /*waitFor(2).seconds();
 					    	 if(str.equalsIgnoreCase("Private Advertiser") || str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Brand") || str.equalsIgnoreCase("Charity"))  {
 					    		 	waitFor(1).seconds();
 					    		 	try {
@@ -315,7 +315,7 @@ public class GlueAccountPage extends PageObject {
 								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();
 					    		 	} catch (Exception e) {}
 					    	 }
-					    	 waitFor(8).seconds();
+					    	 waitFor(8).seconds();*/
 						    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
 						    	 
 								    	 try {
