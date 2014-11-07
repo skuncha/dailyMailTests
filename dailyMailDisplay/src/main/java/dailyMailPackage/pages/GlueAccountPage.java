@@ -224,7 +224,7 @@ public class GlueAccountPage extends PageObject {
 					    	 waitFor(1).second();
 					    	 Thucydides.takeScreenshot();
 		/************************************ Supply Package Details*****************************************/
-					    	/* addPackage().click();  	
+					    	 addPackage().click();  	
 					    	 		waitFor(4).seconds();
 					    	 addPackage().click(); 
 					    	 		waitFor(6).seconds();
@@ -292,7 +292,7 @@ public class GlueAccountPage extends PageObject {
 					    	 saveOrder().click();
 					    	 		waitFor(10).seconds();
 					    	 
-		*//************************************ Supply Price Details ******************************************//*
+		/************************************ Supply Price Details ******************************************/
 					    	 selectPrice().click();
 					    	 		waitFor(1).second();
 					    	 selectRevenue().sendKeys(record.get("revenue"));
@@ -300,9 +300,10 @@ public class GlueAccountPage extends PageObject {
 					    	 updateRevenue().click(); 
 					    	 		waitFor(4).seconds();
 					    	 Thucydides.takeScreenshot();	
-		*//************************************ Accept Order *************************************************//*	
-					    	 acceptOrder().click();*/
-					    	 /*waitFor(2).seconds();
+		/************************************ Accept Order *************************************************/	
+					    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
+					    	 acceptOrder().click();
+					    	 waitFor(2).seconds();
 					    	 if(str.equalsIgnoreCase("Private Advertiser") || str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Brand") || str.equalsIgnoreCase("Charity"))  {
 					    		 	waitFor(1).seconds();
 					    		 	try {
@@ -315,9 +316,7 @@ public class GlueAccountPage extends PageObject {
 								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();
 					    		 	} catch (Exception e) {}
 					    	 }
-					    	 waitFor(8).seconds();*/
-						    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
-						    	 
+					    	 waitFor(8).seconds();
 								    	 try {
 									    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
 									    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
@@ -328,7 +327,7 @@ public class GlueAccountPage extends PageObject {
 					} catch (Exception e)
 						{
 									e.getCause();
-									System.out.println("       " +rowNum + " ---> " + "Test" );
+									System.out.println("       " +rowNum + " ---> " + "Sorry there is DATA or Latency issue please see screenshot in the report for more details" );
 									Thucydides.takeScreenshot();
 									 try {
 								    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
