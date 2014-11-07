@@ -289,9 +289,7 @@ public class GlueAccountPage extends PageObject {
 							 			waitFor(2).second();
 							 		}
 					    	 Thucydides.takeScreenshot();
-					    	 saveOrder().click();
-					    	 		waitFor(10).seconds();
-					    	 
+					    	
 		/************************************ Supply Price Details ******************************************/
 					    	 selectPrice().click();
 					    	 		waitFor(1).second();
