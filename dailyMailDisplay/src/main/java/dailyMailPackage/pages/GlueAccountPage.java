@@ -252,8 +252,8 @@ public class GlueAccountPage extends PageObject {
 							 		if (rcs.equalsIgnoreCase("Nat ex Lonon Only")){
 							 			rcs = "Nat ex Lon\\Lon Only";
 							 		}
-							 		if (rcs.equalsIgnoreCase("Nat ex N Ire and Scot Ire Onlycot")){
-							 			rcs = "Nat ex N Ire and Scot\\N Ire Only\\Scot";
+							 		if (rcs.equalsIgnoreCase("Nat ex N Ire and Scot Ire Onlycot Only")){
+							 			rcs = "Nat ex N Ire and Scot\\N Ire Only\\Scot Only";
 							 		}
 							 		if (rcs.equalsIgnoreCase("Nat ex N Ire Ire Only")){
 							 			rcs = "Nat ex N Ire\\N Ire Only";
