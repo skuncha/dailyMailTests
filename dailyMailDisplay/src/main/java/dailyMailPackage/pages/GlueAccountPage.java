@@ -78,6 +78,7 @@ public class GlueAccountPage extends PageObject {
     
 
     public void supplyLogin_Credientials(String username, String password) {
+    	waitFor(3).seconds();
     	getDriver().manage().window().maximize();
     	username().type(username);
     	password().type(password);
@@ -201,7 +202,7 @@ public class GlueAccountPage extends PageObject {
 							
 		/************** Launch OrderPlugin and Create Order*************************************************/	
 							
-							 	 waitFor(12).seconds();
+							 	 waitFor(15).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
@@ -296,7 +297,7 @@ public class GlueAccountPage extends PageObject {
 					    	 selectRevenue().sendKeys(record.get("revenue"));
 					    	 		waitFor(1).second();
 					    	 updateRevenue().click(); 
-					    	 		waitFor(4).seconds();
+					    	 		waitFor(6).seconds();
 					    	 Thucydides.takeScreenshot();	
 		/************************************ Accept Order *************************************************/	
 					    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
