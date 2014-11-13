@@ -43,7 +43,7 @@ public class GlueAccountPage extends PageObject {
 	private WebElementFacade selectAgencyType()     { return element(By.id("j_id0:j_id1:i:f:pb:d:Agency_Type.input"));								}
 	private WebElementFacade bookingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Booking_AgenciesList.input"));						}
 	private WebElementFacade billingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Selection.input"));						}
-	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options_0.input"));						}
+	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options.input"));							}
 //	j_id0:j_id1:i:f:pb:d:Billing_Options_0.input
 //	j_id0:j_id1:i:f:pb:d:Billing_Options.input
 	private WebElementFacade selectBillingAgency() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:BillingAgencies.input"));							}
@@ -223,7 +223,8 @@ public class GlueAccountPage extends PageObject {
 								 acode =record.get("authCode");
 								 String date = record.get("addDate");
 								 /*String sampleURL = "https://pre-prod.cci-webaccess-dmgmedia.co.uk/salesforce/plugin/orders/create?userid=srinivasa.kuncha&group=Mail Display Sales&profile=MD Manager&accountid=";*/ 
-								 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
+//								 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
+								 String redirect = "&bookings=[{\"packagename\":\"MailPlus\",\"dates\":[\""+ date + "\"]}]";
 								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
 								 getDriver().get(OrderURL);
 								 waitFor(18).seconds();
