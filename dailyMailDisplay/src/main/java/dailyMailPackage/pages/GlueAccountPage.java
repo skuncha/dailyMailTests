@@ -46,6 +46,7 @@ public class GlueAccountPage extends PageObject {
 	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options.input"));							}
 	private WebElementFacade selectBillingAgency() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:BillingAgencies.input"));							}
 	private WebElementFacade contactSelection()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']")); 					}
+	private WebElementFacade selectAnyContact()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']/option[2]")); 			}
 	private WebElementFacade finish() 				{ return element(By.id("j_id0:j_id1:i:f:pb:pbb:bottom:finish"));								}
 	private WebElementFacade orderStatus()   		{ return element(By.id("Order.Identification:order.statusCode"));								}
 	private WebElementFacade orderPurchaseNo()   	{ return element(By.id("Order.Identification:order.purchaseOrderNo"));							}
@@ -102,6 +103,7 @@ public class GlueAccountPage extends PageObject {
 							waitFor(5).seconds();
 							String str = record.get("accountType");
 							rowNum = record.get("recordNo");
+						
 							String clinetuniqueID = record.get("uniqueID");
 							String clientURL = url.concat(clinetuniqueID);
 							/*System.out.println("client URL is -------- :  "+clientURL);*/
@@ -195,15 +197,22 @@ public class GlueAccountPage extends PageObject {
 											}
 								 }
 								waitFor(2).seconds();
-							contactSelection().selectByVisibleText(record.get("customerContact"));
-								waitFor(1).seconds();
+									try
+									{	
+									contactSelection().selectByVisibleText(record.get("customerContact"));
+											waitFor(1).second();
+									} catch (Exception notfound)
+										{
+											selectAnyContact().click();
+											waitFor(1).second();
+										}
 							clickNext().click();
 								waitFor(1).seconds();
 							finish().click();
 							
 		/************** Launch OrderPlugin and Create Order*************************************************/	
 							
-							 	 waitFor(15).seconds();
+							 	 waitFor(16).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
@@ -215,7 +224,7 @@ public class GlueAccountPage extends PageObject {
 								 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
 								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
 								 getDriver().get(OrderURL);
-								 waitFor(15).seconds();
+								 waitFor(18).seconds();
 								  
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
@@ -295,11 +304,11 @@ public class GlueAccountPage extends PageObject {
 					    	
 		/************************************ Supply Price Details ******************************************/
 					    	 selectPrice().click();
-					    	 		waitFor(1).second();
+					    	 		waitFor(2).seconds();
 					    	 selectRevenue().sendKeys(record.get("revenue"));
-					    	 		waitFor(1).second();
+					    	 		waitFor(2).seconds();
 					    	 updateRevenue().click(); 
-					    	 		waitFor(6).seconds();
+					    	 		waitFor(8).seconds();
 					    	 Thucydides.takeScreenshot();	
 		/************************************ Accept Order *************************************************/	
 					    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
