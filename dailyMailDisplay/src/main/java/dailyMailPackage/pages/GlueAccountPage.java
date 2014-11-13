@@ -47,6 +47,7 @@ public class GlueAccountPage extends PageObject {
 	private WebElementFacade selectBillingAgency() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:BillingAgencies.input"));							}
 	private WebElementFacade contactSelection()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']")); 					}
 	private WebElementFacade finish() 				{ return element(By.id("j_id0:j_id1:i:f:pb:pbb:bottom:finish"));								}
+	private WebElementFacade orderStatus()   		{ return element(By.id("Order.Identification:order.statusCode"));								}
 	private WebElementFacade orderPurchaseNo()   	{ return element(By.id("Order.Identification:order.purchaseOrderNo"));							}
     private WebElementFacade orderNote()         	{ return element(By.id("Order.Identification:order.note"));					   					}
     private WebElementFacade orderUrgentNote()   	{ return element(By.id("Order.Identification:order.message"));									}
@@ -214,13 +215,14 @@ public class GlueAccountPage extends PageObject {
 								 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
 								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
 								 getDriver().get(OrderURL);
-								 waitFor(12).seconds();
+								 waitFor(15).seconds();
 								  
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
 					    	 orderUrgentNote().sendKeys(record.get("urgentNote"));
-//					    	 orderSalesRepId().sendKeys("Michael Burgess");
+					    	 orderStatus().selectByVisibleText(record.get("orderStatus"));
+					    	 orderSalesRepId().sendKeys("Michael Burgess");
 					    	 order = orderID().getText();
 					    	 waitFor(1).second();
 					    	 Thucydides.takeScreenshot();
