@@ -3,7 +3,7 @@ package dailyMailPackage.steps;
 import java.io.IOException;
 
 import net.thucydides.core.steps.ScenarioSteps;
-import dailyMailPackage.pages.GlueAccountPage;
+import dailyMailPackage.pages.DailyMailAccountPage;
 
 /**
  * @author srinivasa.kuncha
@@ -11,7 +11,7 @@ import dailyMailPackage.pages.GlueAccountPage;
  */
 public class EndUserSteps extends ScenarioSteps {
 
-    GlueAccountPage dictionaryPage;
+    DailyMailAccountPage dictionaryPage;
 
         public void supplyLoginCredientials(String username, String password){
     	dictionaryPage.supplyLogin_Credientials(username, password);

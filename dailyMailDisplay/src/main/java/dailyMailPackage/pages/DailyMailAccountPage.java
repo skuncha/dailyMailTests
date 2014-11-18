@@ -21,7 +21,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 @DefaultUrl("http://test.salesforce.com")
-public class GlueAccountPage extends PageObject {
+public class DailyMailAccountPage extends PageObject {
 	
 	long timeNow = System.currentTimeMillis();
 	String url = "https://dmgsalescloud--prodmirror.cs8.my.salesforce.com/";
@@ -48,6 +48,7 @@ public class GlueAccountPage extends PageObject {
 //	j_id0:j_id1:i:f:pb:d:Billing_Options.input
 	private WebElementFacade selectBillingAgency() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:BillingAgencies.input"));							}
 	private WebElementFacade contactSelection()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']")); 					}
+	private WebElementFacade searchContact()     	{ 	return element(By.id("j_id0:j_id1:i:f:pb:d:Prompt_Contact_Name.input")); 					}
 	private WebElementFacade selectAnyContact()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']/option[2]")); 			}
 	private WebElementFacade finish() 				{ return element(By.id("j_id0:j_id1:i:f:pb:pbb:bottom:finish"));								}
 	private WebElementFacade orderStatus()   		{ return element(By.id("Order.Identification:order.statusCode"));								}
@@ -71,7 +72,7 @@ public class GlueAccountPage extends PageObject {
     private WebElementFacade ABCopySplit()			{ return element(By.id(":propval.propertyBoolValue"));											}
     private WebElementFacade regionalCopySplit()   	{ return element(By.id("Order.Properties:Regional Copy Split"));								}
     private WebElementFacade spreadAd()   			{ return element(By.id("Order.Schedule.Material:material.isSpreadAd"));							}
-    private WebElementFacade color()   				{ return element(By.id("Order.Schedule.Material:material.bookedCMYKColors "));					}
+    private WebElementFacade color()   				{ return element(By.id("Order.Schedule.Material:material.bookedCMYKColors"));					}
     private WebElementFacade pageRequest()   		{ return element(By.id("Order.Schedule:schedule.pageRequest"));									}
     private WebElementFacade nextMonth()   	 	 	{ return element(By.xpath("//thead/tr[1]/th/span[4]/span[3]/i"));								}
     private WebElementFacade selectPrice()   	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[3]/div[1]/h4/a/span"));		}
@@ -80,9 +81,8 @@ public class GlueAccountPage extends PageObject {
     private WebElementFacade acceptOrder()   	 	{ return element(By.xpath("//nav[button='Accept']/button[3]"));									} 
     private WebElementFacade orderID()      	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[1]/div[2]/div/div[2]/fieldset/div[1]/div/p")); }
     
-
     public void supplyLogin_Credientials(String username, String password) {
-    	waitFor(3).seconds();
+    		waitFor(3).seconds();
     	getDriver().manage().window().maximize();
     	username().type(username);
     	password().type(password);
@@ -102,7 +102,7 @@ public class GlueAccountPage extends PageObject {
 				for (Map<String, String> record : testDataSrc.getData()) 
 				{
 						try{
-							waitFor(5).seconds();
+								waitFor(5).seconds();
 							String str = record.get("accountType");
 							rowNum = record.get("recordNo");
 						
@@ -110,10 +110,10 @@ public class GlueAccountPage extends PageObject {
 							String clientURL = url.concat(clinetuniqueID);
 							/*System.out.println("client URL is -------- :  "+clientURL);*/
 							getDriver().get(clientURL);
-							waitFor(12).seconds();
+								waitFor(10).seconds();
 							Thucydides.takeScreenshot();
 							createDirectOrder().click();
-							waitFor(4).seconds();
+								waitFor(4).seconds();
 							
 								if (str.equalsIgnoreCase("Brand"))
 								{
@@ -126,7 +126,7 @@ public class GlueAccountPage extends PageObject {
 											bookingSelection().selectByVisibleText(record.get("bookingAgency"));
 												waitFor(1).seconds();
 											clickNext().click();
-											waitFor(2).second();
+												waitFor(2).second();
 											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
 												waitFor(2).second();
 											clickNext().click();
@@ -146,15 +146,15 @@ public class GlueAccountPage extends PageObject {
 											try{
 												selectAgencyType().selectByVisibleText(record.get("agencyType"));
 												clickNext().click();
-											}catch (Exception exp){}
-											waitFor(2).seconds();
+										}   catch (Exception exp){}
+												waitFor(2).seconds();
 											bookingSelection().selectByVisibleText(record.get("bookingAgency"));
 											clickNext().click();
 												waitFor(2).seconds();
 											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
 												waitFor(1).second();
 											clickNext().click();
-											waitFor(2).second();
+												waitFor(2).second();
 										}
 										else 
 										{ 
@@ -180,15 +180,15 @@ public class GlueAccountPage extends PageObject {
 													String selectionType = record.get("agencyType");
 													if (selectionType.equalsIgnoreCase("Booking Agency"))
 													{
-														waitFor(2).second();
+															waitFor(2).second();
 														bookingSelection().selectByVisibleText(record.get("bookingAgency"));
 															waitFor(1).seconds();
 														clickNext().click();
-														waitFor(2).second();
+															waitFor(2).second();
 														selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
-														waitFor(1).second();
+															waitFor(1).second();
 														clickNext().click();
-														waitFor(2).second();
+															waitFor(2).second();
 													}
 													else 
 													{ 
@@ -199,15 +199,19 @@ public class GlueAccountPage extends PageObject {
 											}
 								 }
 								waitFor(2).seconds();
-									try
-									{	
+								try
+								{	
+									searchContact().type(record.get("customerContact"));
+									clickNext().click();
+										waitFor(1).second();
 									contactSelection().selectByVisibleText(record.get("customerContact"));
-											waitFor(1).second();
-									} catch (Exception notfound)
-										{
-											selectAnyContact().click();
-											waitFor(1).second();
-										}
+										waitFor(1).second();
+								
+								} catch (Exception notfound)
+									{
+									contactSelection().selectByVisibleText(record.get("customerContact"));
+										waitFor(1).second();
+									}
 							clickNext().click();
 								waitFor(1).seconds();
 							finish().click();
@@ -223,7 +227,7 @@ public class GlueAccountPage extends PageObject {
 								 acode =record.get("authCode");
 								 String date = record.get("addDate");
 								 /*String sampleURL = "https://pre-prod.cci-webaccess-dmgmedia.co.uk/salesforce/plugin/orders/create?userid=srinivasa.kuncha&group=Mail Display Sales&profile=MD Manager&accountid=";*/ 
-							 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
+								 String redirect = "&bookings=[{\"packagename\":\"DM Display\",\"dates\":[\""+ date + "\"]}]";
 //								 String redirect = "&bookings=[{\"packagename\":\"MailPlus\",\"dates\":[\""+ date + "\"]}]";
 								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
 								 getDriver().get(OrderURL);
@@ -234,9 +238,14 @@ public class GlueAccountPage extends PageObject {
 					    	 orderNote().sendKeys(record.get("orderNote"));
 					    	 orderUrgentNote().sendKeys(record.get("urgentNote"));
 					    	 orderStatus().selectByVisibleText(record.get("orderStatus"));
-					    	 orderSalesRepId().sendKeys("Michael Burgess");
+					    	 String salesrep = record.get("salesPerson");	
+					    	 	if (!" ".equals(salesrep))
+					    	 	{
+					    	 		orderSalesRepId().selectByVisibleText(record.get("salesPerson"));
+					    	 		waitFor(1).second();
+					    	 	}	
 					    	 order = orderID().getText();
-					    	 waitFor(1).second();
+					    	 		waitFor(1).second();
 					    	 Thucydides.takeScreenshot();
 		/************************************ Supply Package Details*****************************************/
 					    	 addPackage().click();  	
@@ -253,11 +262,17 @@ public class GlueAccountPage extends PageObject {
 						    		waitFor(6).seconds();
 						     productionNote().sendKeys(record.get("productionNote"));
 								 	waitFor(2).seconds();
+							 String colour = record.get("colour");	 	
+									 if (colour.equals("M"))
+									 {
+										 color().click();
+										 waitFor(3).seconds();
+									 }
 						     selectModule().selectByVisibleText(record.get("module"));
 							    	waitFor(5).seconds();
 							 String zoneType = record.get("zones");
 							 		
-							 		 rcs = record.get("regionalCopySplit");
+							 		    rcs = record.get("regionalCopySplit");
 							 		if (rcs.equalsIgnoreCase("England & Walescot & N Ire")){
 							 			rcs = "England & Wales\\Scot & N Ire";
 							 		}
@@ -311,12 +326,12 @@ public class GlueAccountPage extends PageObject {
 					    	 selectRevenue().sendKeys(record.get("revenue"));
 					    	 		waitFor(2).seconds();
 					    	 updateRevenue().click(); 
-					    	 		waitFor(8).seconds();
+					    	 		waitFor(6).seconds();
 					    	 Thucydides.takeScreenshot();	
 		/************************************ Accept Order *************************************************/	
 					    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
 					    	 acceptOrder().click();
-					    	 waitFor(2).seconds();
+					    	 	waitFor(2).seconds();
 					    	 if(str.equalsIgnoreCase("Private Advertiser") || str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Brand") || str.equalsIgnoreCase("Charity"))  {
 					    		 	waitFor(1).seconds();
 					    		 	try {
@@ -330,25 +345,19 @@ public class GlueAccountPage extends PageObject {
 					    		 	} catch (Exception e) {}
 					    	 }
 					    	 waitFor(8).seconds();
-								    	 try {
-									    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
-									    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
-									    	      getDriver().switchTo().alert().accept();
-									    	 }
-									    	 catch (Exception e) {}
 /*************************************************************************************************/
 					} catch (Exception e)
 						{
-									e.getCause();
-									System.out.println("       " +rowNum + " ---> " + "Sorry there is DATA or Latency issue please see screenshot in the report for more details" );
+//									e.getCause();
+									System.out.println("       " +rowNum + " ---> " + "Sorry DATA or Latency issue please check report" );
 									Thucydides.takeScreenshot();
-									 try {
-								    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
-								    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
-								    	      getDriver().switchTo().alert().accept();
-								    	 }
-								    	 catch (Exception x) {}
 						}
+						try {
+					    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
+					    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
+					    	      getDriver().switchTo().alert().accept();
+					    	 }
+					    	 catch (Exception x) {}
 				} 
 	}		
 }
