@@ -42,6 +42,7 @@ public class DailyMailAccountPage extends PageObject {
 	private WebElementFacade createDirectOrder() 	{ return element(By.cssSelector("input[value='Create Direct Order']"));							}
 	private WebElementFacade selectAgencyType()     { return element(By.id("j_id0:j_id1:i:f:pb:d:Agency_Type.input"));								}
 	private WebElementFacade bookingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Booking_AgenciesList.input"));						}
+	private WebElementFacade parentBookingSel() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:ParentBooking_Agency.input"));						}
 	private WebElementFacade billingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Selection.input"));						}
 	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options.input"));							}
 //	j_id0:j_id1:i:f:pb:d:Billing_Options_0.input
@@ -114,21 +115,25 @@ public class DailyMailAccountPage extends PageObject {
 							Thucydides.takeScreenshot();
 							createDirectOrder().click();
 								waitFor(4).seconds();
-							
 								if (str.equalsIgnoreCase("Brand"))
 								{
 										String selectionType = record.get("billingSelection");
-										if (selectionType.equalsIgnoreCase("Via Agency"))
+										if (selectionType.equalsIgnoreCase("Agency"))
 										{
 											billingOption().selectByVisibleText(billingType);
-												waitFor(1).second();
 											clickNext().click();
-											bookingSelection().selectByVisibleText(record.get("bookingAgency"));
-												waitFor(1).seconds();
+											waitFor(1).second();
+											try {
+													parentBookingSel().selectByVisibleText(record.get("bookingAgency"));
+													waitFor(1).seconds();
+												} catch (Exception e)
+												{
+													bookingSelection().selectByVisibleText(record.get("bookingAgency"));
+													waitFor(1).seconds();
+												}
 											clickNext().click();
-												waitFor(2).second();
+											waitFor(2).second();
 											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
-												waitFor(2).second();
 											clickNext().click();
 										}
 										else
@@ -203,7 +208,7 @@ public class DailyMailAccountPage extends PageObject {
 								{	
 									searchContact().type(record.get("customerContact"));
 									clickNext().click();
-										waitFor(1).second();
+										waitFor(3).second();
 									contactSelection().selectByVisibleText(record.get("customerContact"));
 										waitFor(1).second();
 								
@@ -215,9 +220,7 @@ public class DailyMailAccountPage extends PageObject {
 							clickNext().click();
 								waitFor(1).seconds();
 							finish().click();
-							
 		/************** Launch OrderPlugin and Create Order*************************************************/	
-							
 							 	 waitFor(16).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
@@ -232,7 +235,6 @@ public class DailyMailAccountPage extends PageObject {
 								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
 								 getDriver().get(OrderURL);
 								 waitFor(18).seconds();
-								  
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
@@ -271,8 +273,10 @@ public class DailyMailAccountPage extends PageObject {
 						     selectModule().selectByVisibleText(record.get("module"));
 							    	waitFor(5).seconds();
 							 String zoneType = record.get("zones");
-							 		
 							 		    rcs = record.get("regionalCopySplit");
+							 		   /*rcs = rcs.replace('/', '\\');
+							 		   System.out.println("the values that is supplied is : ----------------------------->"+rcs);*/
+							 		   
 							 		if (rcs.equalsIgnoreCase("England & Walescot & N Ire")){
 							 			rcs = "England & Wales\\Scot & N Ire";
 							 		}
@@ -319,7 +323,6 @@ public class DailyMailAccountPage extends PageObject {
 							 			waitFor(2).second();
 							 		}
 					    	 Thucydides.takeScreenshot();
-					    	
 		/************************************ Supply Price Details ******************************************/
 					    	 selectPrice().click();
 					    	 		waitFor(2).seconds();
@@ -345,7 +348,7 @@ public class DailyMailAccountPage extends PageObject {
 					    		 	} catch (Exception e) {}
 					    	 }
 					    	 waitFor(8).seconds();
-/*************************************************************************************************/
+	  /*************************************************************************************************/
 					} catch (Exception e)
 						{
 //									e.getCause();
