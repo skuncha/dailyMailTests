@@ -15,7 +15,7 @@ Meta:
 @author Srinivasa Kuncha
 @tags feature: DM Display Orders
 
-Given Sales rep is on the Salesfoce home page
+Given Sales rep is on the Salesforce home page
 When Sales rep login to glue as Mail user by supplying [username] and [password]
 When Sales rep search for customer account and place order using csv [file]
 Then Sales rep should see customer account with associated orders in glue
