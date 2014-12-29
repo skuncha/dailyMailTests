@@ -210,7 +210,7 @@ public class DailyMailAccountPage extends PageObject {
 								{	
 									searchContact().type(record.get("customerContact"));
 									clickNext().click();
-										waitFor(3).second();
+										waitFor(5).second();
 									contactSelection().selectByVisibleText(record.get("customerContact"));
 										waitFor(1).second();
 								
