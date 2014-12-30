@@ -105,7 +105,7 @@ public class DailyMailAccountPage extends PageObject {
 				for (Map<String, String> record : testDataSrc.getData()) 
 				{
 						try{
-								waitFor(5).seconds();
+								waitFor(4).seconds();
 							String str = record.get("accountType");
 							rowNum = record.get("recordNo");
 						
@@ -113,7 +113,7 @@ public class DailyMailAccountPage extends PageObject {
 							String clientURL = url.concat(clinetuniqueID);
 							/*System.out.println("client URL is -------- :  "+clientURL);*/
 							getDriver().get(clientURL);
-								waitFor(10).seconds();
+								waitFor(7).seconds();
 							Thucydides.takeScreenshot();
 							createDirectOrder().click();
 								waitFor(4).seconds();
@@ -210,7 +210,7 @@ public class DailyMailAccountPage extends PageObject {
 								{	
 									searchContact().type(record.get("customerContact"));
 									clickNext().click();
-										waitFor(5).second();
+										waitFor(3).second();
 									contactSelection().selectByVisibleText(record.get("customerContact"));
 										waitFor(1).second();
 								
@@ -223,7 +223,7 @@ public class DailyMailAccountPage extends PageObject {
 								waitFor(1).seconds();
 							finish().click();
 		/************** Launch OrderPlugin and Create Order*************************************************/	
-							 	 waitFor(16).seconds();
+							 	 waitFor(14).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
@@ -236,7 +236,7 @@ public class DailyMailAccountPage extends PageObject {
 //								 String redirect = "&bookings=[{\"packagename\":\"MailPlus\",\"dates\":[\""+ date + "\"]}]";
 								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
 								 getDriver().get(OrderURL);
-								 waitFor(18).seconds();
+								 waitFor(14).seconds();
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
@@ -255,17 +255,17 @@ public class DailyMailAccountPage extends PageObject {
 					    	 addPackage().click();  	
 					    	 		waitFor(4).seconds();
 					    	 addPackage().click(); 
-					    	 		waitFor(6).seconds();
+					    	 		waitFor(4).seconds();
 						     selectPublication().selectByVisibleText(record.get("publication"));
-						    	 	waitFor(3).seconds();
+						    	 	waitFor(2).seconds();
 						     selectSection().selectByVisibleText(record.get("section"));
-						    	 	waitFor(5).seconds();
+						    	 	waitFor(4).seconds();
 						     selectZone().selectByVisibleText(record.get("zones"));
-						    	 	waitFor(6).seconds();
+						    	 	waitFor(4).seconds();
 						     selectSubSection().selectByVisibleText(record.get("subsection"));
-						    		waitFor(6).seconds();
+						    		waitFor(4).seconds();
 						     productionNote().sendKeys(record.get("productionNote"));
-								 	waitFor(2).seconds();
+								 	waitFor(1).seconds();
 							 String colour = record.get("colour");	 	
 									 if (colour.equals("M"))
 									 {
@@ -331,7 +331,7 @@ public class DailyMailAccountPage extends PageObject {
 					    	 selectRevenue().sendKeys(record.get("revenue"));
 					    	 		waitFor(2).seconds();
 					    	 updateRevenue().click(); 
-					    	 		waitFor(6).seconds();
+					    	 		waitFor(4).seconds();
 					    	 Thucydides.takeScreenshot();	
 		/************************************ Accept Order *************************************************/	
 					    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
