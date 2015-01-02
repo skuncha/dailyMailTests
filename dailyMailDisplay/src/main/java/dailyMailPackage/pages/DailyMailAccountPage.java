@@ -331,7 +331,7 @@ public class DailyMailAccountPage extends PageObject {
 					    	 selectRevenue().sendKeys(record.get("revenue"));
 					    	 		waitFor(2).seconds();
 					    	 updateRevenue().click(); 
-					    	 		waitFor(3).seconds();
+					    	 		waitFor(5).seconds();
 					    	 Thucydides.takeScreenshot();	
 		/************************************ Accept Order *************************************************/	
 					    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
@@ -349,7 +349,7 @@ public class DailyMailAccountPage extends PageObject {
 								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();
 					    		 	} catch (Exception e) {}
 					    	 }
-					    	 waitFor(6).seconds();
+					    	 waitFor(8).seconds();
 	  /*************************************************************************************************/
 					} catch (Exception e)
 						{
