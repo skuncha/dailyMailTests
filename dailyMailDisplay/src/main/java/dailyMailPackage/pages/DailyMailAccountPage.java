@@ -253,9 +253,9 @@ public class DailyMailAccountPage extends PageObject {
 					    	 Thucydides.takeScreenshot();
 		/************************************ Supply Package Details*****************************************/
 					    	 addPackage().click();  	
-					    	 		waitFor(3).seconds();
+					    	 		waitFor(4).seconds();
 					    	 addPackage().click(); 
-					    	 		waitFor(3).seconds();
+					    	 		waitFor(4).seconds();
 						     selectPublication().selectByVisibleText(record.get("publication"));
 						    	 	waitFor(2).seconds();
 						     selectSection().selectByVisibleText(record.get("section"));
