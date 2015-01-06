@@ -96,7 +96,7 @@ public class DailyMailAccountPage extends PageObject {
     public void clickOnLogin(){
     	waitABit(1000);
     	loginbutton().click();
-    	waitFor(5).seconds();
+    	waitFor(10).seconds();
     }
     public void readfile(String fileloc) throws IOException{
     	
@@ -117,10 +117,10 @@ public class DailyMailAccountPage extends PageObject {
 							String clientURL = url.concat(clinetuniqueID);
 							/*System.out.println("client URL is -------- :  "+clientURL);*/
 							getDriver().get(clientURL);
-								waitFor(6).seconds();
+								waitFor(10).seconds();
 							Thucydides.takeScreenshot();
 							createDirectOrder().click();
-								waitFor(4).seconds();
+								waitFor(5).seconds();
 								if (str.equalsIgnoreCase("Brand"))
 								{
 										String selectionType = record.get("billingSelection");
@@ -131,7 +131,7 @@ public class DailyMailAccountPage extends PageObject {
 											waitFor(1).second();
 											try {
 													parentBookingSel().selectByVisibleText(record.get("bookingAgency"));
-													waitFor(1).seconds();
+													waitFor(2).seconds();
 												} catch (Exception e)
 												{
 													bookingSelection().selectByVisibleText(record.get("bookingAgency"));
@@ -158,10 +158,10 @@ public class DailyMailAccountPage extends PageObject {
 												selectAgencyType().selectByVisibleText(record.get("agencyType"));
 												clickNext().click();
 										}   catch (Exception exp){}
-												waitFor(2).seconds();
+												waitFor(3).seconds();
 											bookingSelection().selectByVisibleText(record.get("bookingAgency"));
 											clickNext().click();
-												waitFor(2).seconds();
+												waitFor(3).seconds();
 											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
 												waitFor(1).second();
 											clickNext().click();
