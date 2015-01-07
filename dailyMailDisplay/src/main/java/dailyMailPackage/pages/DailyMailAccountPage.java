@@ -26,7 +26,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DailyMailAccountPage extends PageObject {
 	
 	long timeNow = System.currentTimeMillis();
-	String url = "https://cs14.salesforce.com/";
+	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
+		
+//	https://cs14.salesforce.com/
+	
 	String order,rowNum;
 	String billingType = "Agency";
 	static String rcs;
@@ -62,7 +65,8 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade orderSalesTerritory()  { return element(By.xpath("//*[@id='MaterialAccordion']/div/div[2]/div/div[2]/div/fieldset/div[2]/div/div/span/button/i"));	}
     private WebElementFacade orderSTInput()			{ return element(By.xpath("//*[@id='salesforce-plugin']/div[2]/div/div/form/div[2]/div/table/thead/tr[2]/th[1]/input")); 	}
     private WebElementFacade orderSTselect()			{ return element(By.xpath("//*[@id='salesforce-plugin']/div[2]/div/div/form/div[2]/div/table/tbody/tr/td[1]/span")); 	}
-    private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span/input"));												}
+//    private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span/input"));												}
+    private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span[1]/input"));												}
     private WebElementFacade title() 			 	{ return element(By.id("Order.Schedule:sched.titleCode"));										}
     private WebElementFacade selectPublication() 	{ return element(By.id("Order.Schedule:sched.publicationCode"));								}
     private WebElementFacade webSiteCategory()   	{ return element(By.id("Order.Schedule:sched.webSiteCategoryCode"));							}
@@ -117,7 +121,14 @@ public class DailyMailAccountPage extends PageObject {
 							String clientURL = url.concat(clinetuniqueID);
 							/*System.out.println("client URL is -------- :  "+clientURL);*/
 							getDriver().get(clientURL);
-								waitFor(10).seconds();
+							waitFor(1).seconds();
+							try {
+						    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
+						    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
+						    	      getDriver().switchTo().alert().accept();
+						    	 }
+						    	 catch (Exception x) {}
+								waitFor(8).seconds();
 							Thucydides.takeScreenshot();
 							createDirectOrder().click();
 								waitFor(5).seconds();
