@@ -50,8 +50,7 @@ public class DailyMailAccountPage extends PageObject {
 	private WebElementFacade parentBookingSel() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:ParentBooking_Agency.input"));						}
 	private WebElementFacade billingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Selection.input"));						}
 	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options.input"));							}
-//	j_id0:j_id1:i:f:pb:d:Billing_Options_0.input
-//	j_id0:j_id1:i:f:pb:d:Billing_Options.input
+	private WebElementFacade billingOption1() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options_0.input"));						}
 	private WebElementFacade selectBillingAgency() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:BillingAgencies.input"));							}
 	private WebElementFacade contactSelection()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']")); 					}
 	private WebElementFacade searchContact()     	{ 	return element(By.id("j_id0:j_id1:i:f:pb:d:Prompt_Contact_Name.input")); 					}
@@ -90,7 +89,9 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade updateRevenue()   	 	{ return element(By.xpath("//fieldset/div/div[2]/div/div/span/button"));						}
     private WebElementFacade acceptOrder()   	 	{ return element(By.xpath("//nav[button='Accept']/button[3]"));									} 
     private WebElementFacade orderID()      	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[1]/div[2]/div/div[2]/fieldset/div[1]/div/p")); }
-  
+    private WebElementFacade selectHeight()     	{ return element(By.xpath("//*[@id='Order.Schedule.Material:material.bookedHeight']"));			}
+    private WebElementFacade selectWidth()     		{ return element(By.xpath("//*[@id='Order.Schedule.Material:material.bookedWidth']"));			}
+   
     public void supplyLogin_Credientials(String username, String password) {
     		waitFor(3).seconds();
     	getDriver().manage().window().maximize();
@@ -100,7 +101,7 @@ public class DailyMailAccountPage extends PageObject {
     public void clickOnLogin(){
     	waitABit(1000);
     	loginbutton().click();
-    	waitFor(10).seconds();
+    	waitFor(15).seconds();
     }
     public void readfile(String fileloc) throws IOException{
     	
@@ -135,16 +136,22 @@ public class DailyMailAccountPage extends PageObject {
 								if (str.equalsIgnoreCase("Brand"))
 								{
 										String selectionType = record.get("billingSelection");
+										if (selectionType.equalsIgnoreCase("Parent"))
+										{
+											billingOption1().selectByVisibleText("Parent");
+											clickNext().click();
+											waitFor(1).second();
+										}
 										if (selectionType.equalsIgnoreCase("Agency"))
 										{
 											try{
 											billingOption().selectByVisibleText(billingType);
 											clickNext().click();
-											} catch (Exception excep) {clickNext().click();}
+											}catch (Exception exp){clickNext().click();}
 											waitFor(1).second();
 											try {
 													parentBookingSel().selectByVisibleText(record.get("bookingAgency"));
-													waitFor(2).seconds();
+													waitFor(1).seconds();
 												} catch (Exception e)
 												{
 													bookingSelection().selectByVisibleText(record.get("bookingAgency"));
@@ -155,11 +162,12 @@ public class DailyMailAccountPage extends PageObject {
 											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
 											clickNext().click();
 										}
-										else
+										
+										if (selectionType.equalsIgnoreCase("Direct"))
 										{
-											billingOption().selectByVisibleText("Direct");
-												waitFor(1).second();
+											billingOption().selectByVisibleText(billingType);
 											clickNext().click();
+											waitFor(1).second();
 										}
 								}
 								if (str.equalsIgnoreCase("Client") || str.equalsIgnoreCase("DMGT Group"))
@@ -287,16 +295,30 @@ public class DailyMailAccountPage extends PageObject {
 						    	 	waitFor(4).seconds();
 						     selectSubSection().selectByVisibleText(record.get("subsection"));
 						    		waitFor(4).seconds();
-						     productionNote().sendKeys(record.get("productionNote"));
-								 	waitFor(1).seconds();
 							 String colour = record.get("colour");	 	
 									 if (colour.equals("M"))
 									 {
 										 color().click();
 										 waitFor(3).seconds();
 									 }
+							String salesmodule = record.get("module");
+							
+							if (!"".equals(salesmodule))
+				    	 	{
 						     selectModule().selectByVisibleText(record.get("module"));
-							    	waitFor(3).seconds();
+							    	waitFor(4).seconds();
+				    	 	}
+							else
+							{
+								selectHeight().sendKeys(record.get("height"));
+								waitFor(4).seconds();
+								selectWidth().clear();
+								waitFor(2).seconds();
+								selectWidth().typeAndEnter(record.get("width"));
+								waitFor(4).seconds();
+							}
+							productionNote().sendKeys(record.get("productionNote"));
+						 	waitFor(1).seconds();
 							 String zoneType = record.get("zones");
 							 		    rcs = record.get("regionalCopySplit");
 							 		   /*rcs = rcs.replace('/', '\\');
