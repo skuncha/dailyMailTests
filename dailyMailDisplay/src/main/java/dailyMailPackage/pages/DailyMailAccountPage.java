@@ -54,7 +54,7 @@ public class DailyMailAccountPage extends PageObject {
 	private WebElementFacade selectBillingAgency() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:BillingAgencies.input"));							}
 	private WebElementFacade contactSelection()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']")); 					}
 	private WebElementFacade searchContact()     	{ 	return element(By.id("j_id0:j_id1:i:f:pb:d:Prompt_Contact_Name.input")); 					}
-	private WebElementFacade selectAnyContact()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']/option[2]")); 			}
+//	private WebElementFacade selectAnyContact()     { return element(By.xpath("//*[@id='j_id0:j_id1:i:f:pb:d:Contact.input']/option[2]")); 			}
 	private WebElementFacade finish() 				{ return element(By.id("j_id0:j_id1:i:f:pb:pbb:bottom:finish"));								}
 	private WebElementFacade orderStatus()   		{ return element(By.id("Order.Identification:order.statusCode"));								}
 	private WebElementFacade orderPurchaseNo()   	{ return element(By.id("Order.Identification:order.purchaseOrderNo"));							}
@@ -67,23 +67,23 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span[1]/input"));												}
     private WebElementFacade title() 			 	{ return element(By.id("Order.Schedule:sched.titleCode"));										}
     private WebElementFacade selectPublication() 	{ return element(By.id("Order.Schedule:sched.publicationCode"));								}
-    private WebElementFacade webSiteCategory()   	{ return element(By.id("Order.Schedule:sched.webSiteCategoryCode"));							}
+//    private WebElementFacade webSiteCategory()   	{ return element(By.id("Order.Schedule:sched.webSiteCategoryCode"));							}
     private WebElementFacade selectSection()     	{ return element(By.id("Order.Schedule:sched.sectionCode"));									}
-    private WebElementFacade webSite()   		 	{ return element(By.id("Order.Schedule:sched.webSiteCode"));									}
+//    private WebElementFacade webSite()   		 	{ return element(By.id("Order.Schedule:sched.webSiteCode"));									}
     private WebElementFacade selectSubSection()  	{ return element(By.id("Order.Schedule:sched.subSectionCode"));									}
     private WebElementFacade selectZone()   	 	{ return element(By.id("Order.Schedule:"));														}
-    private WebElementFacade distribution()   	 	{ return element(By.id("rder.Schedule:sched.distributionCode"));								}
-    private WebElementFacade noOfInserts()   	 	{ return element(By.id("Order.Schedule:sched.noOfInserts"));									}
-    private WebElementFacade saveOrder()   	     	{ return element(By.xpath("//nav[button='Save']/button[2]"));									}
+//    private WebElementFacade distribution()   	 	{ return element(By.id("rder.Schedule:sched.distributionCode"));							}
+//    private WebElementFacade noOfInserts()   	 	{ return element(By.id("Order.Schedule:sched.noOfInserts"));									}
+//    private WebElementFacade saveOrder()   	     	{ return element(By.xpath("//nav[button='Save']/button[2]"));								}
     private WebElementFacade selectModule()   	 	{ return element(By.id("Order.Schedule.Material:material.moduleCode"));							}
     private WebElementFacade productionNote()   	{ return element(By.id("Order.Schedule.Material:material.productionNote"));						}
     private WebElementFacade ABCopySplit()			{ return element(By.id(":propval.propertyBoolValue"));											}
     private WebElementFacade regionalCopySplit()   	{ return element(By.id("Order.Properties:Regional Copy Split"));								}
-    private WebElementFacade spreadAd()   			{ return element(By.id("Order.Schedule.Material:material.isSpreadAd"));							}
+//    private WebElementFacade spreadAd()   			{ return element(By.id("Order.Schedule.Material:material.isSpreadAd"));						}
     private WebElementFacade color()   				{ return element(By.id("Order.Schedule.Material:material.bookedCMYKColors"));					}
-    private WebElementFacade freeReasons()   		{ return element(By.xpath("//*[@id='Order.Properties:Free reasons']"));							}
-    private WebElementFacade pageRequest()   		{ return element(By.id("Order.Schedule:schedule.pageRequest"));									}
-    private WebElementFacade nextMonth()   	 	 	{ return element(By.xpath("//thead/tr[1]/th/span[4]/span[3]/i"));								}
+//    private WebElementFacade freeReasons()   		{ return element(By.xpath("//*[@id='Order.Properties:Free reasons']"));							}
+//    private WebElementFacade pageRequest()   		{ return element(By.id("Order.Schedule:schedule.pageRequest"));									}
+//    private WebElementFacade nextMonth()   	 	 	{ return element(By.xpath("//thead/tr[1]/th/span[4]/span[3]/i"));							}
     private WebElementFacade selectPrice()   	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[3]/div[1]/h4/a/span"));		}
     private WebElementFacade selectRevenue()   	 	{ return element(By.id("Order.Price:UserRevenue"));												}
     private WebElementFacade updateRevenue()   	 	{ return element(By.xpath("//fieldset/div/div[2]/div/div/span/button"));						}
@@ -377,7 +377,7 @@ public class DailyMailAccountPage extends PageObject {
 							 			ABCopySplit().click();
 							 			waitFor(2).second();
 							 		}
-							 		freeReasons().sendKeys(record.get("freereasons"));
+//							 		freeReasons().sendKeys(record.get("freereasons"));
 							 		
 							 		
 					    	 Thucydides.takeScreenshot();
