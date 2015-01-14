@@ -64,7 +64,6 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade orderSalesTerritory()  { return element(By.xpath("//*[@id='MaterialAccordion']/div/div[2]/div/div[2]/div/fieldset/div[2]/div/div/span/button/i"));	}
     private WebElementFacade orderSTInput()			{ return element(By.xpath("//*[@id='salesforce-plugin']/div[2]/div/div/form/div[2]/div/table/thead/tr[2]/th[1]/input")); 	}
     private WebElementFacade orderSTselect()			{ return element(By.xpath("//*[@id='salesforce-plugin']/div[2]/div/div/form/div[2]/div/table/tbody/tr/td[1]/span")); 	}
-//    private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span/input"));												}
     private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span[1]/input"));												}
     private WebElementFacade title() 			 	{ return element(By.id("Order.Schedule:sched.titleCode"));										}
     private WebElementFacade selectPublication() 	{ return element(By.id("Order.Schedule:sched.publicationCode"));								}
@@ -82,6 +81,7 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade regionalCopySplit()   	{ return element(By.id("Order.Properties:Regional Copy Split"));								}
     private WebElementFacade spreadAd()   			{ return element(By.id("Order.Schedule.Material:material.isSpreadAd"));							}
     private WebElementFacade color()   				{ return element(By.id("Order.Schedule.Material:material.bookedCMYKColors"));					}
+    private WebElementFacade freeReasons()   		{ return element(By.xpath("//*[@id='Order.Properties:Free reasons']"));							}
     private WebElementFacade pageRequest()   		{ return element(By.id("Order.Schedule:schedule.pageRequest"));									}
     private WebElementFacade nextMonth()   	 	 	{ return element(By.xpath("//thead/tr[1]/th/span[4]/span[3]/i"));								}
     private WebElementFacade selectPrice()   	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[3]/div[1]/h4/a/span"));		}
@@ -147,7 +147,15 @@ public class DailyMailAccountPage extends PageObject {
 											try{
 											billingOption().selectByVisibleText(billingType);
 											clickNext().click();
-											}catch (Exception exp){clickNext().click();}
+											}
+											catch (Exception exp)
+											{
+												try{
+													billingOption1().selectByVisibleText(billingType);
+												}catch (Exception exp1){}
+												
+												clickNext().click();
+											}
 											waitFor(1).second();
 											try {
 													parentBookingSel().selectByVisibleText(record.get("bookingAgency"));
@@ -369,6 +377,9 @@ public class DailyMailAccountPage extends PageObject {
 							 			ABCopySplit().click();
 							 			waitFor(2).second();
 							 		}
+							 		freeReasons().sendKeys(record.get("freereasons"));
+							 		
+							 		
 					    	 Thucydides.takeScreenshot();
 		/************************************ Supply Price Details ******************************************/
 					    	 selectPrice().click();
