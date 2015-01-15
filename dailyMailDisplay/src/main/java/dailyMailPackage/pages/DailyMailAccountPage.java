@@ -298,7 +298,7 @@ public class DailyMailAccountPage extends PageObject {
 						     selectPublication().selectByVisibleText(record.get("publication"));
 						    	 	waitFor(2).seconds();
 						     selectSection().selectByVisibleText(record.get("section"));
-						    	 	waitFor(4).seconds();
+						    	 	waitFor(3).seconds();
 						     selectZone().selectByVisibleText(record.get("zones"));
 						    	 	waitFor(4).seconds();
 						     selectSubSection().selectByVisibleText(record.get("subsection"));
@@ -307,7 +307,7 @@ public class DailyMailAccountPage extends PageObject {
 									 if (colour.equals("M"))
 									 {
 										 color().click();
-										 waitFor(3).seconds();
+										 waitFor(2).seconds();
 									 }
 							String salesmodule = record.get("module");
 							
@@ -319,7 +319,7 @@ public class DailyMailAccountPage extends PageObject {
 							else
 							{
 								selectHeight().sendKeys(record.get("height"));
-								waitFor(4).seconds();
+								waitFor(3).seconds();
 								selectWidth().clear();
 								waitFor(2).seconds();
 								selectWidth().typeAndEnter(record.get("width"));
