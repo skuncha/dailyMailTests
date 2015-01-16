@@ -21,15 +21,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 
-@DefaultUrl("http://test.salesforce.com")
+@DefaultUrl("https://eu1.salesforce.com/")
 
 public class DailyMailAccountPage extends PageObject {
 	
 	long timeNow = System.currentTimeMillis();
-	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
+//	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
+	String url = "https://eu1.salesforce.com/";
 		
-//	https://cs14.salesforce.com/
-	
 	String order,rowNum;
 	String billingType = "Agency";
 	static String rcs;
