@@ -101,7 +101,7 @@ public class DailyMailAccountPage extends PageObject {
     public void clickOnLogin(){
     	waitABit(1000);
     	loginbutton().click();
-    	waitFor(15).seconds();
+    	waitFor(20).seconds();
     }
     public void readfile(String fileloc) throws IOException{
     	
@@ -256,7 +256,7 @@ public class DailyMailAccountPage extends PageObject {
 								waitFor(1).seconds();
 							finish().click();
 		/************** Launch OrderPlugin and Create Order*************************************************/	
-							 	 waitFor(12).seconds();
+							 	 waitFor(14).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
@@ -269,7 +269,7 @@ public class DailyMailAccountPage extends PageObject {
 //								 String redirect = "&bookings=[{\"packagename\":\"MailPlus\",\"dates\":[\""+ date + "\"]}]";
 								 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirect);
 								 getDriver().get(OrderURL);
-								 waitFor(11).seconds();
+								 waitFor(12).seconds();
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
@@ -292,7 +292,7 @@ public class DailyMailAccountPage extends PageObject {
 					    	 Thucydides.takeScreenshot();
 		/************************************ Supply Package Details*****************************************/
 					    	 addPackage().click();  	
-					    	 		waitFor(4).seconds();
+					    	 		waitFor(5).seconds();
 					    	 addPackage().click(); 
 					    	 		waitFor(4).seconds();
 						     selectPublication().selectByVisibleText(record.get("publication"));
@@ -302,7 +302,7 @@ public class DailyMailAccountPage extends PageObject {
 						     selectZone().selectByVisibleText(record.get("zones"));
 						    	 	waitFor(4).seconds();
 						     selectSubSection().selectByVisibleText(record.get("subsection"));
-						    		waitFor(4).seconds();
+						    		waitFor(5).seconds();
 							 String colour = record.get("colour");	 	
 									 if (colour.equals("M"))
 									 {
@@ -331,7 +331,10 @@ public class DailyMailAccountPage extends PageObject {
 							 		    rcs = record.get("regionalCopySplit");
 							 		   /*rcs = rcs.replace('/', '\\');
 							 		   System.out.println("the values that is supplied is : ----------------------------->"+rcs);*/
-							 		   
+							 		    
+							 	    if (rcs.equalsIgnoreCase("England & Walescot")){
+								 			rcs = "England & Wales\\Scot";
+							 		}  
 							 		if (rcs.equalsIgnoreCase("England & Walescot & N Ire")){
 							 			rcs = "England & Wales\\Scot & N Ire";
 							 		}
@@ -398,11 +401,14 @@ public class DailyMailAccountPage extends PageObject {
 					    		 	try {
 								    	 WebElement prepaymentwindow1 = getDriver().switchTo().activeElement();
 								    	 		waitFor(1).second();
-								    	 prepaymentwindow1.findElement(By.xpath("//input[@value='Prepay']")).click();
+//								    	 prepaymentwindow1.findElement(By.xpath("//input[@value='Prepay']")).click();
+								    	 prepaymentwindow1.findElement(By.xpath("//input[@value='Ignore']")).click();
+								    	//input[@value='Ignore']
 								    	 		waitFor(3).seconds();
-								    	 WebElement prepaymentwindow2 = getDriver().switchTo().activeElement();
+								    	 prepaymentwindow1.findElement(By.xpath("//input[@value='Ignore']")).click();
+								    	 /*WebElement prepaymentwindow2 = getDriver().switchTo().activeElement();
 								    	 		waitFor(1).second(); 
-								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();
+								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();*/
 					    		 	} catch (Exception e) {}
 					    	 }
 					    	 waitFor(8).seconds();
