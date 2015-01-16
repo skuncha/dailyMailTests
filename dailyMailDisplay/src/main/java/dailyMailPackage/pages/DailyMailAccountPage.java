@@ -395,7 +395,7 @@ public class DailyMailAccountPage extends PageObject {
 					    	 System.out.println("       " +rowNum + " . " + " Order ID : " +order );	
 					    	 acceptOrder().click();
 					    	 	waitFor(2).seconds();
-					    	 if(str.equalsIgnoreCase("Private Advertiser") || str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Brand") || str.equalsIgnoreCase("Charity"))  {
+					    	 if(str.equalsIgnoreCase("Client") ||str.equalsIgnoreCase("Private Advertiser") || str.equalsIgnoreCase("Direct Advertiser")|| str.equalsIgnoreCase("Brand") || str.equalsIgnoreCase("Charity"))  {
 					    		 	waitFor(1).seconds();
 					    		 	try {
 								    	 WebElement prepaymentwindow1 = getDriver().switchTo().activeElement();
