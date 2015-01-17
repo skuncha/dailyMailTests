@@ -302,8 +302,6 @@ public class DailyMailAccountPage extends PageObject {
 						    	 	waitFor(4).seconds();
 						     selectSubSection().selectByVisibleText(record.get("subsection"));
 						    		waitFor(5).seconds();
-						     productionNote().sendKeys(record.get("productionNote"));
-								 	waitFor(2).seconds();
 							 String colour = record.get("colour");	 	
 									 if (colour.equals("M"))
 									 {
@@ -381,7 +379,12 @@ public class DailyMailAccountPage extends PageObject {
 							 			waitFor(2).second();
 							 		}
 //							 		freeReasons().sendKeys(record.get("freereasons"));
-							 		
+							 		productionNote().sendKeys(record.get("productionNote"));
+							 		waitFor(4).seconds();
+							 		productionNote().clear();
+							 		waitFor(1).seconds();
+							 		productionNote().sendKeys(record.get("productionNote"));
+									waitFor(1).seconds();
 							 		
 					    	 Thucydides.takeScreenshot();
 		/************************************ Supply Price Details ******************************************/
