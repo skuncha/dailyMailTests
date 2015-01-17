@@ -302,6 +302,8 @@ public class DailyMailAccountPage extends PageObject {
 						    	 	waitFor(4).seconds();
 						     selectSubSection().selectByVisibleText(record.get("subsection"));
 						    		waitFor(5).seconds();
+						     productionNote().sendKeys(record.get("productionNote"));
+								 	waitFor(2).seconds();
 							 String colour = record.get("colour");	 	
 									 if (colour.equals("M"))
 									 {
@@ -324,8 +326,7 @@ public class DailyMailAccountPage extends PageObject {
 								selectWidth().typeAndEnter(record.get("width"));
 								waitFor(4).seconds();
 							}
-							productionNote().sendKeys(record.get("productionNote"));
-						 	waitFor(1).seconds();
+							
 							 String zoneType = record.get("zones");
 							 		    rcs = record.get("regionalCopySplit");
 							 		   /*rcs = rcs.replace('/', '\\');

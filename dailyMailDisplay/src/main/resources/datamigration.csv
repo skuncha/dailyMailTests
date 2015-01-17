@@ -1,11 +1,314 @@
 recordNo,Order ID,accountType,uniqueID,lastName,billingSelection,agencyType,bookingAgency,billingAgency,customerContact,package,orderStatus,PONumber,orderNote,urgentNote,salesPerson,salesTerritory,title,publication,section,subsection,zones,addDate,regionalCopySplit,copySplit,module,height,width,colour,productionNote,positionrequests,pagerequests,freereasons,yield,revenue,contractTotalValue,authCode
-10,Re-run,Brand,001D000000yvtt2IAA,Claims For You,Agency,Booking Agency,Accord Group Ltd,Accord Group Ltd,Robert Dickinson,DM Display,Normal,TBC,54084403,,Graeme Rossiter,Mail Display Client Team Finance,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-01-26,,N,15x2,,,C,BPS  BPS gteed please,,0,0,0,5205,0,76ShK6
-43,"Latency, Re-run",Client,001D000000p4PbpIAE,Travel One,Via Agency,Booking Agency,Accord Group Ltd,Accord Group Ltd,Kristofer Klitou,DM Display,Normal,4135091,54203205 5x1 mono,,Emma Barnes,Mail Display Client Team Travel,Daily Mail,Daily Mail Display,Travel MD,None,01. National,2015-01-24,,N,,5,1,M,  BEST POSITION POSSIBLE PLEASE,,0,0,0,510,0,C3K6Dy
-63,"Latency, Re-run",Brand,001D0000011CiL5IAK,Coast & Country Hotels,Agency,Booking Agency,MEC Manchester,MEC,Chloe Bartlem,DM Display,Provisional,TBC,54221104 COAST & COUNTRY,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-01-24,,N,20x3,,,M,  EARLY AND BEST POSSIBLE PLEASE,,0,0,0,5400,0,rCetCv
-81,"Latency, Re-run",Client,001D000000j2mtWIAQ,Virgin Atlantic Airways Ltd,Via Agency,Booking Agency,Manning Gottlieb OMD,OMD UK,Alex Smith,DM Display,Normal,TBC,54221903 Virgin Atlantic,,Yasmine Connor,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-01-24,,N,18x7,,,C,12SZ  ,,0,0,0,15770,0,C9ONmB
-101,Re-run,Brand,001D000000tkhbvIAA,Department of Health,Agency,Booking Agency,Carat Ltd,Carat Ltd,Luisa Parginou,DM Display,Normal,TBC,54318901 NHS Under the Weather,,Simon Hopkins,Mail Display Trading Team C,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-01-24,,N,Full Page MD,,,C,"  Gtd FH Please observe clash policy, must face full matter, please see SH with any problems",,0,0,0,15500,0,OCaoaN
-102,Re-run,Brand,001D000000tkhbvIAA,Department of Health,Agency,Booking Agency,Carat Ltd,Carat Ltd,Luisa Parginou,DM Display,Normal,TBC,54318902 NHS Under the Weather,,Simon Hopkins,Mail Display Trading Team C,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-01-31,,N,Full Page MD,,,C,"  Gtd FH Please observe clash policy, must face full matter, please see SH with any problems",,0,0,0,15500,0,L5trAo
-112,"Latency, Re-run",Client,001D000000w0HBPIA2,Holland & Barrett,Via Agency,Booking Agency,Carat Manchester Ltd,Carat Manchester Ltd,Nina Clark,DM Display,Normal,TBC,54273703 Penny Sale and Ask Us Anything,,Laurissa Bickerton,Mail Display Manchester,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-01-23,,N,18x7,,,C,  ,,0,0,0,17577,0,KsLFls
-114,Re-run,Client,001D000001KHJdPIAX,Glasgow City Marketing Bureau,Via Agency,Booking Agency,Spirit Media Works,Spirit Media Works,Hannah Cassells,DM Display,Normal,TBC,54303403 Celtic Connections,,Lorna Armour,Mail Display House Ads,Daily Mail,Daily Mail Display,It's Friday MD,None,04. Scotland,2015-01-23,,N,20x2,,,C,"  IT'S FRIDAY GTD
-run alongside Celtic Connections editorial",,0,0,0,520,0,aSVZBU
-188,Re-run,Direct Advertiser,001D000000j2n70IAA,Bupa,Via Agency,Booking Agency,MEC,MEC,Louis Mayne,DM Display,Normal,TBC,54321501,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Good Health MD,None,01. National,2015-01-20,,N,25x4,,,C,  Good Health,,0,0,0,13000,0,VULY41
+191,0,Client,001D00000176q1JIAQ,Vaillant Ltd,Via Agency,Booking Agency,McCann Birmingham,McCann Birmingham,Laura Russell,DM Display,Provisional,P3091039,54201903 Consistent Conversation,,Tracey Kwong,Mail Display Manchester,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-11-02,,N,25x4,,,C,  Gteed FH,,0,0,0,14000,0,qm6THM
+192,0,Client,001D00000176q1JIAQ,Vaillant Ltd,Via Agency,Booking Agency,McCann Birmingham,McCann Birmingham,Laura Russell,DM Display,Provisional,P3091039,54201904 Consistent Conversation,,Tracey Kwong,Mail Display Manchester,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-11-30,,N,25x4,,,C,  Gteed FH,,0,0,0,14000,0,5Q9NR9
+193,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314701 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-02-05,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,q768dm
+194,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314702 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-03-05,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,WXqws6
+195,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314703 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-03-12,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,K43Ylq
+196,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314704 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-04-09,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,3k5yUX
+197,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314705 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-07-30,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,v3Rkew
+198,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314706 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-08-27,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,DGdcvv
+199,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314707 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-09-24,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,jD2hnG
+200,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314708 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-10-01,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,jN7pKK
+201,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314709 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-11-26,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,SXPY3W
+202,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314710 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-12-03,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,9SdU59
+203,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314711 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-12-10,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,zaOmbn
+204,0,Client,001D000000j2mqpIAA,Pandora Jewellery UK Ltd,Via Agency,Booking Agency,Cream UK Ltd,Cream UK Ltd,Charlotte Gelipta,DM Display,Provisional,TBC,54314712 Pandora,,Lynne David,Mail Display Client Team Luxury Goods,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-12-17,,N,20x2,,,C,"  Pandora competitive set for adverts to run before: 
+o   Swarovski
+o   Links of London
+o   Nomination
+o   Chamilia
+o   Storywheels
+o   Thomas Sabo
+o   Trollbeads
+o   Georg Jensen
+o   Ti Sento
+o   Hot Diamonds
+o   Love Links
+ 
+",,0,0,0,5600,0,Yj952D
+205,0,Client,001D000001Ez2NFIAZ,Michael Rose Ltd,Via Agency,Booking Agency,Dewynters Plc,Dewynters Plc,Dean Griffiths,DM Display,Normal,TBC,54315901 Once,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,It's Friday MD,None,03. South,2015-03-06,,N,20x3,,,C,  Gtd Its Friday,,0,0,0,2520,0,G3kFdB
+206,0,Direct Advertiser,001D000000j2mtEIAQ,Unique Vacations UK  Ltd,Via Agency,Booking Agency,The 7 Stars Llp,The 7 Stars Llp,Suzanne Morgan,DM Display,Normal,TBC,54316301 Sandals,,James Fairbanks,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-07,,N,15x2,,,C,BPS  Guaranteed BPS,,0,0,0,4500,0,0iOw0M
+207,0,Direct Advertiser,001D000000j2mtEIAQ,Unique Vacations UK  Ltd,Via Agency,Booking Agency,The 7 Stars Llp,The 7 Stars Llp,Suzanne Morgan,DM Display,Normal,TBC,54316302 Sandals,,James Fairbanks,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-20,,N,15x2,,,C,BPS  Guaranteed BPS,,0,0,0,4500,0,VCKzm2
+208,0,Direct Advertiser,001D000000j2mtEIAQ,Unique Vacations UK  Ltd,Via Agency,Booking Agency,The 7 Stars Llp,The 7 Stars Llp,Suzanne Morgan,DM Display,Normal,TBC,54316303 Sandals,,James Fairbanks,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-27,,N,15x2,,,C,BPS  Guaranteed BPS,,0,0,0,4500,0,zv183M
+209,0,Direct Advertiser,001D000000j2mtEIAQ,Unique Vacations UK  Ltd,Via Agency,Booking Agency,The 7 Stars Llp,The 7 Stars Llp,Suzanne Morgan,DM Display,Normal,TBC,54316304 Sandals,,James Fairbanks,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-28,,N,15x2,,,C,BPS  Guaranteed BPS,,0,0,0,4500,0,Syd7eE
+210,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304701,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-21,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,Ffk869
+211,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304702,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-04-11,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,62eZVD
+212,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304703,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-04-25,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,BrPz3p
+213,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304704,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-05-09,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,tkoZxm
+214,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304705,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-05-16,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,lAbT3P
+215,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304706,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-06-13,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,4InlWm
+216,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304707,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-06-20,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,GwebhC
+217,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304708,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-07-11,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,czKNOU
+218,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304709,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-08-29,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,g8ZtTt
+219,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304710,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-09-19,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,DUYhuJ
+220,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304711,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-09-26,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,8wxbdl
+221,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304712,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-10-10,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,v2tM3z
+222,0,Client,001D0000010eqheIAA,Crofton Resources Ltd,Via Agency,Booking Agency,Midas Media Ltd,Midas Media Ltd,Manuel Riveiro,DM Display,Provisional,TBC,54320801 Finacial,,Alice Moore,Mail Display International London,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",01. National,2015-02-03,,N,15x2,,,M,"  Guaranteed 5-15, Right Hand Page, Strong request for Solus.",,0,0,0,3105,0,HG01Qo
+223,0,Client,001D0000010eqheIAA,Crofton Resources Ltd,Via Agency,Booking Agency,Midas Media Ltd,Midas Media Ltd,Manuel Riveiro,DM Display,Provisional,TBC,54320802 Finacial,,Alice Moore,Mail Display International London,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",01. National,2015-02-05,,N,15x2,,,M,"  Guaranteed 5-15, Right Hand Page, Strong request for Solus.",,0,0,0,3105,0,wMIpw9
+224,0,Client,001D0000010eqheIAA,Crofton Resources Ltd,Via Agency,Booking Agency,Midas Media Ltd,Midas Media Ltd,Manuel Riveiro,DM Display,Provisional,TBC,54320803 Finacial,,Alice Moore,Mail Display International London,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",01. National,2015-02-09,,N,15x2,,,M,"  Guaranteed 5-15, Right Hand Page, Strong request for Solus.",,0,0,0,3105,0,b7cp7j
+225,0,Client,001D0000010eqheIAA,Crofton Resources Ltd,Via Agency,Booking Agency,Midas Media Ltd,Midas Media Ltd,Manuel Riveiro,DM Display,Provisional,TBC,54320804 Finacial,,Alice Moore,Mail Display International London,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",01. National,2015-02-17,,N,15x2,,,M,"  Guaranteed 5-15, Right Hand Page, Strong request for Solus.",,0,0,0,3105,0,n8MNba
+226,0,Client,001D0000010eqheIAA,Crofton Resources Ltd,Via Agency,Booking Agency,Midas Media Ltd,Midas Media Ltd,Manuel Riveiro,DM Display,Provisional,TBC,54320805 Finacial,,Alice Moore,Mail Display International London,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",01. National,2015-02-19,,N,15x2,,,M,"  Guaranteed 5-15, Right Hand Page, Strong request for Solus.",,0,0,0,3105,0,n2v5qw
+227,0,Client,001D0000010eqheIAA,Crofton Resources Ltd,Via Agency,Booking Agency,Midas Media Ltd,Midas Media Ltd,Manuel Riveiro,DM Display,Provisional,TBC,54320806 Finacial,,Alice Moore,Mail Display International London,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",01. National,2015-02-23,,N,15x2,,,M,"  Guaranteed 5-15, Right Hand Page, Strong request for Solus.",,0,0,0,3105,0,Eg0oYS
+228,0,Client,001D0000010eqheIAA,Crofton Resources Ltd,Via Agency,Booking Agency,Midas Media Ltd,Midas Media Ltd,Manuel Riveiro,DM Display,Provisional,TBC,54320807 Finacial,,Alice Moore,Mail Display International London,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",01. National,2015-02-25,,N,15x2,,,M,"  Guaranteed 5-15, Right Hand Page, Strong request for Solus.",,0,0,0,3105,0,BUQtR3
+229,0,Client,001D0000011DccIIAS,Reckitt Benckiser Household,Via Agency,Booking Agency,Zenithoptimedia Services,Zenithoptimedia Services,Jonathon Mansoor,DM Display,Normal,TBC,54321901 Megared,,Steven Tapp,Mail Display Trading Team B,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-07,,N,Full Page MD,,,C,  FH,,0,0,0,19000,0,brSdeP
+230,0,Client,001D0000011DccIIAS,Reckitt Benckiser Household,Via Agency,Booking Agency,Zenithoptimedia Services,Zenithoptimedia Services,Jonathon Mansoor,DM Display,Normal,TBC,54321902 Megared,,Steven Tapp,Mail Display Trading Team B,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-21,,N,Full Page MD,,,C,  FH,,0,0,0,19000,0,CwiCgc
+231,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086201 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-09-15,,N,20x3,,,C,"1SZ  Gtd FH - Part of 5 advert takeover.
+MUST RUN 1st advert in book
+No adverts in between",,0,0,0,7573.8,0,2tJ6qo
+232,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086202 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-09-15,,N,25x4,,,C,"1SZ  Gtd FH - Part of 5 advert takeover.
+MUST RUN 2nd advert in book
+No adverts in between",,0,0,0,12623,0,Gecq2H
+233,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086203 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-09-15,,N,17x7,,,C,"1SZ  Gtd FH - Part of 5 advert takeover.
+MUST RUN 3rd advert in book
+No adverts in between",,0,0,0,15021.37,0,JJpK1R
+234,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086204 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-09-15,,N,36x7,,,C,"1SZ  Gtd FH - Part of 5 advert takeover.
+MUST RUN 4th advert in book
+No adverts in between",,0,0,0,31809.96,0,GaCoC7
+235,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086205 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-09-15,,N,,36,3,C,"1SZ  Gtd FH - Part of 5 advert takeover.
+MUST RUN 5th advert in book
+No adverts in between",,0,0,0,13632.84,0,WKZVwG
+236,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086206 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-15,,N,15x2,,,C,"BPS  Gtd Sport - Part of 5 advert takeover - running from back of the book.
+Gtd OBC
+No adverts in between",,0,0,0,3786.9,0,KWveIG
+237,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086207 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-15,,N,,10,7,C,"  Gtd Sport - Part of 5 advert takeover - running from back of the book.
+Gtd 2nd advert from back
+No adverts in between",,0,0,0,8836.1,0,LyOHpq
+238,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086208 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-15,,N,,20,3,C,"  Gtd Sport - Part of 5 advert takeover - running from back of the book.
+Gtd 3rd advert from back.
+No adverts in between.",,0,0,0,7573.8,0,XTuvnR
+239,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086209 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-15,,N,,25,4,C,"  Gtd Sport - Part of 5 advert takeover - running from back of the book.
+Gtd 4th advert from back.
+No adverts in between.",,0,0,0,12623,0,2MjXkM
+240,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086210 Sport takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-15,,N,,25,4,C,"  Gtd Sport - Part of 5 advert takeover - running from back of the book.
+Gtd 5th advert from back.
+No adverts in between.",,0,0,0,12623,0,Klom9B
+241,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304713,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-10-24,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,fMdq30
+242,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304714,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-10-31,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,N6CMjL
+243,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304715,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-11-14,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,0qyrto
+244,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304716,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-11-21,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,UhvM2u
+245,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304717,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-11-28,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,ojaQM5
+246,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304718,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-12-05,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,zCklSL
+247,0,Client,001D000000j2mv0IAA,Bose Ltd,Via Agency,Booking Agency,Mediacom,Mediacom,Stewart Kelly,DM Display,Provisional,TBC,54304719,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-12-12,,N,Full Page MD,,,C,OBC  Anniversary Dates,,0,0,0,23556.52,0,M0RYh1
+248,0,Client,001D000000j2mqPIAQ,O2 UK Ltd,Via Agency,Booking Agency,Havas Media,Havas Media,Ben Chadd,DM Display,Normal,TBC,54305103,,Paul Burke,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-02-03,,N,25x4,,,C,  GTD 1st/2nd Format,,0,0,0,13400,0,DH0y7S
+249,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Leanne Young,DM Display,Normal,TBC,53906120 Consumer,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-07,,N,Full Page MD,,,C,IFC  Gtd IFC or OBC if available,,0,0,0,18000,0,b6VAjE
+250,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Leanne Young,DM Display,Provisional,TBC,53906121 Consumer,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-14,,N,Full Page MD,,,C,IFC  Gtd IFC or OBC if available,,0,0,0,18000,0,ht8fBh
+251,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Leanne Young,DM Display,Provisional,TBC,53906122 Consumer,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-21,,N,Full Page MD,,,C,IFC  Gtd IFC or OBC if available,,0,0,0,18000,0,Y6nrwE
+252,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Leanne Young,DM Display,Provisional,TBC,53906123 Consumer,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-28,,N,Full Page MD,,,C,IFC  Gtd IFC or OBC if available,,0,0,0,18000,0,LqxqYz
+253,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Leanne Young,DM Display,Provisional,TBC,53906124 Consumer,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-03-07,,N,Full Page MD,,,C,IFC  Gtd IFC or OBC if available,,0,0,0,18000,0,JyDUag
+254,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Leanne Young,DM Display,Provisional,TBC,53906125 Consumer,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-03-14,,N,Full Page MD,,,C,IFC  Gtd IFC or OBC if available,,0,0,0,18000,0,3zkZnu
+255,0,Client,001D000001EOIQMIA5,Advanced Hair Studio,Via Agency,Booking Agency,Bygraves Bushell Valladares Sheldon Ltd,Bygraves Bushell Valladares Sheldon Ltd,Sandie O'Sullivan,DM Display,Provisional,TBC,54086901,,Rachel Biscombe,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-29,,N,15x2,,,M,BPS  ,,0,0,0,0,0,ergmkT
+256,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086801 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-19,,N,,10,7,C,"  Gtd sport takeover
+MUST RUN 1st FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,8836.1,0,U15Oob
+257,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086802 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-26,,N,,10,7,C,"  Gtd sport takeover
+MUST RUN 1st FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,8836.1,0,a1z24o
+258,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086803 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-21,,N,,10,7,C,"  Gtd sport takeover
+MUST RUN 1st FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,8836.1,0,81dYtD
+259,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086804 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-04,,N,,10,7,C,"  Gtd sport takeover
+MUST RUN 1st FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,8836.1,0,eLKD4e
+260,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086805 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-25,,N,,10,7,C,"  Gtd sport takeover
+MUST RUN 1st FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,8836.1,0,CXYhqZ
+261,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086806 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-09,,N,,10,7,C,"  Gtd sport takeover
+MUST RUN 1st FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,8836.1,0,KlKbHJ
+262,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086807 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2016-02-24,,N,,10,7,C,"  Gtd sport takeover
+MUST RUN 1st FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,8836.1,0,QXvLgc
+263,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086808 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-19,,N,,17,7,C,"  Gtd sport takeover
+MUST RUN 2nd FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,15021.37,0,eUQvSk
+264,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086809 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-26,,N,,17,7,C,"  Gtd sport takeover
+MUST RUN 2nd FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,15021.37,0,nCiELq
+265,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086810 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-21,,N,,17,7,C,"  Gtd sport takeover
+MUST RUN 2nd FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,15021.37,0,J568y2
+266,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086811 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-04,,N,,17,7,C,"  Gtd sport takeover
+MUST RUN 2nd FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,15021.37,0,20OZD6
+267,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086812 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-25,,N,,17,7,C,"  Gtd sport takeover
+MUST RUN 2nd FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,15021.37,0,wwe77r
+268,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086813 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-09,,N,,17,7,C,"  Gtd sport takeover
+MUST RUN 2nd FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,15021.37,0,efbLAw
+269,0,Client,001D000000j2mvGIAQ,BT,Via Agency,Booking Agency,Maxus,Maxus,Laura Smith,DM Display,Provisional,TBC,54086814 Sport Takeover,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2016-02-24,,N,,17,7,C,"  Gtd sport takeover
+MUST RUN 2nd FROM BACK OF SPORT
+part of 2 adverts
+No adverts to run inbetween",,0,0,0,15021.37,0,HYShx6
+270,0,Client,001D000000j2n6uIAA,Bradford Exchange,Via Agency,Booking Agency,Media Campaign Ltd,Media Campaign Ltd,John Barker,DM Display,Normal,TBC,54180302 Son protection and strength bracelet,,Katie Lis,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-14,,N,Full Page MD,,,C,OBC  ,,0,0,0,30000,0,7yhb9w
+271,0,Client,001D000000j2n6uIAA,Bradford Exchange,Via Agency,Booking Agency,Media Campaign Ltd,Media Campaign Ltd,John Barker,DM Display,Provisional,TBC,54180303 Brad ex,,Katie Lis,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-04-18,,N,Full Page MD,,,C,OBC  ,,0,0,0,30000,0,pGjCWz
+272,0,Client,001D000000j2n6uIAA,Bradford Exchange,Via Agency,Booking Agency,Media Campaign Ltd,Media Campaign Ltd,John Barker,DM Display,Provisional,TBC,54180304 Brad ex,,Katie Lis,Mail Display Trading Team A,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-06-27,,N,Full Page MD,,,C,OBC  ,,0,0,0,30000,0,2QnA7G
+273,0,Client,001D00000176q1JIAQ,Vaillant Ltd,Via Agency,Booking Agency,McCann Birmingham,McCann Birmingham,Laura Russell,DM Display,Normal,P3091293,54201915 Consistent Conversation,,Tracey Kwong,Mail Display Manchester,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-02-10,,N,25x4,,,C,  Gteed FH,,0,0,0,14000,0,6stJGU
+274,0,Direct Advertiser,001D000001VvZ5LIAV,Generation Global Ltd,Direct,,,,Steven Wilkie,DM Display,Normal,TBC,54259003,,Graeme Rossiter,Mail Display Client Team Finance,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-02-12,,N,15x2,,,M,BPS  Gteed BPS please,,0,0,0,3540,0,p67SzT
+275,0,Direct Advertiser,001D000001Oz7scIAB,Open Property Finance,Via Agency,Booking Agency,Bygraves Bushell Valladares Sheldon Ltd,Bygraves Bushell Valladares Sheldon Ltd,Daz Valladares,DM Display,Normal,TBC,54117206,,Graeme Rossiter,Mail Display Client Team Finance,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",09. National ex Scot & N Ire,2015-03-21,,N,15x2,,,M,  Gteed pages 5-21 please. Not on same spread as swiftcapital,,0,0,0,3180,0,f1CWFq
+276,0,Direct Advertiser,001D000001Oz7scIAB,Open Property Finance,Via Agency,Booking Agency,Bygraves Bushell Valladares Sheldon Ltd,Bygraves Bushell Valladares Sheldon Ltd,Daz Valladares,DM Display,Normal,TBC,54117207,,Graeme Rossiter,Mail Display Client Team Finance,Daily Mail,Daily Mail Display,Front Half MD,"Page 5, 7, 9 MD",09. National ex Scot & N Ire,2015-04-04,,N,15x2,,,M,  Gteed pages 5-21 please. Not on same spread as swiftcapital,,0,0,0,3180,0,7ksqxl
+277,0,Client,001D000000l3tjTIAQ,Furniture Village,Via Agency,Booking Agency,TMW Ltd,TMW Ltd,Chris Tomes,DM Display,Provisional,TBC,54315301,,Laurissa Bickerton,Mail Display Manchester,Daily Mail,Daily Mail Display,TV MD,None,01. National,2015-02-23,,N,25x4,,,C,  ,,0,0,0,13800,0,6ZWlqB
+278,0,Client,001D000000j2mwkIAA,David Lloyd,Via Agency,Booking Agency,Havas Media,Havas Media,Becky Markham,DM Display,Normal,TBC,54315701,,Paul Burke,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Femail MD,None,01. National,2015-02-05,,N,25x4,,,C,  ,,0,0,0,13800,0,0KW4Rj
+279,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817205 CHampions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-05,,N,,18,7,C,  SPORT TAKEOVER - 3rd of 5 ads from the back and category exclusivity in Sport!,,0,0,0,16551.36,0,alXMqx
+280,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817206 CHampions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-06,,N,,18,7,C,  SPORT TAKEOVER - 3rd of 5 ads from the back and category exclusivity in Sport!,,0,0,0,16551.36,0,kMquBy
+281,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817211 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-05,,N,,36,7,C,  SPORT TAKEOVER - 4th of 5 ads from the back and category exclusivity in Sport!,,0,0,0,32866.03,0,Fh47Be
+282,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817212 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-06,,N,,36,7,C,  SPORT TAKEOVER - 4th of 5 ads from the back and category exclusivity in Sport!,,0,0,0,32866.03,0,PxJJUX
+283,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817217 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-05,,N,,10,7,C,  SPORT TAKEOVER - 1st of 5 ads from the back and category exclusivity in Sport!,,0,0,0,9195.2,0,0XWKyq
+284,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817218 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-06,,N,,10,7,C,  SPORT TAKEOVER - 1st of 5 ads from the back and category exclusivity in Sport!,,0,0,0,9195.2,0,GGRZM1
+285,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817219 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-05,,N,,10,7,C,  Gtd 1st ad from back page in Sport,,0,0,0,9008.3,0,E50BHR
