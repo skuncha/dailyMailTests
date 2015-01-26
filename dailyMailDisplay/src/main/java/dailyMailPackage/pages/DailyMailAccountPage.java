@@ -21,13 +21,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 
-@DefaultUrl("https://eu1.salesforce.com/")
+@DefaultUrl("https://test.salesforce.com/")
 
 public class DailyMailAccountPage extends PageObject {
 	
 	long timeNow = System.currentTimeMillis();
 //	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
-	String url = "https://eu1.salesforce.com/";
+	String url = "https://dmgsalescloud--systest.cs7.my.salesforce.com/";
 		
 	String order,rowNum;
 	String billingType = "Agency";
@@ -63,7 +63,8 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade orderSalesTerritory()  { return element(By.xpath("//*[@id='MaterialAccordion']/div/div[2]/div/div[2]/div/fieldset/div[2]/div/div/span/button/i"));	}
     private WebElementFacade orderSTInput()			{ return element(By.xpath("//*[@id='salesforce-plugin']/div[2]/div/div/form/div[2]/div/table/thead/tr[2]/th[1]/input")); 	}
     private WebElementFacade orderSTselect()			{ return element(By.xpath("//*[@id='salesforce-plugin']/div[2]/div/div/form/div[2]/div/table/tbody/tr/td[1]/span")); 	}
-    private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span[1]/input"));												}
+//    private WebElementFacade addPackage()   	 	{ return element(By.xpath("//h4/a/span[1]/input"));												}
+    private WebElementFacade addPackage()   	 	{ return element(By.xpath("//fieldset/div/div/div/h4/a/span"));									}
     private WebElementFacade title() 			 	{ return element(By.id("Order.Schedule:sched.titleCode"));										}
     private WebElementFacade selectPublication() 	{ return element(By.id("Order.Schedule:sched.publicationCode"));								}
 //    private WebElementFacade webSiteCategory()   	{ return element(By.id("Order.Schedule:sched.webSiteCategoryCode"));							}
@@ -292,8 +293,8 @@ public class DailyMailAccountPage extends PageObject {
 		/************************************ Supply Package Details*****************************************/
 					    	 addPackage().click();  	
 					    	 		waitFor(5).seconds();
-					    	 addPackage().click(); 
-					    	 		waitFor(4).seconds();
+//					    	 addPackage().click(); 
+//					    	 		waitFor(4).seconds();
 						     selectPublication().selectByVisibleText(record.get("publication"));
 						    	 	waitFor(2).seconds();
 						     selectSection().selectByVisibleText(record.get("section"));

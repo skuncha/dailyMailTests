@@ -1,126 +1,96 @@
 recordNo,Order ID,accountType,uniqueID,lastName,billingSelection,agencyType,bookingAgency,billingAgency,customerContact,package,orderStatus,PONumber,orderNote,urgentNote,salesPerson,salesTerritory,title,publication,section,subsection,zones,addDate,regionalCopySplit,copySplit,module,height,width,colour,productionNote,positionrequests,pagerequests,freereasons,yield,revenue,contractTotalValue,authCode
-571,0,Brand,001D000000yvtt2IAA,Claims For You,Agency,Booking Agency,Accord Group Ltd,Accord Group Ltd,Robert Dickinson,DM Display,Normal,TBC,54084426 Ref: 4130314,,Graeme Rossiter,Mail Display Client Team Finance,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-07-27,,N,15x2,,,C,BPS  Gteed BPS please,,0,0,0,5205,0,8cyjcd
-572,0,Brand,001D000000yvtt2IAA,Claims For You,Agency,Booking Agency,Accord Group Ltd,Accord Group Ltd,Robert Dickinson,DM Display,Normal,TBC,54084427 Ref: 4130314,,Graeme Rossiter,Mail Display Client Team Finance,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-14,,N,15x2,,,C,BPS  Gteed BPS please,,0,0,0,5205,0,W6c8s1
-573,0,Brand,001D000000yvtt2IAA,Claims For You,Agency,Booking Agency,Accord Group Ltd,Accord Group Ltd,Robert Dickinson,DM Display,Normal,TBC,54084428 Ref: 4130314,,Graeme Rossiter,Mail Display Client Team Finance,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-12,,N,15x2,,,C,BPS  Gteed BPS please,,0,0,0,5205,0,2O4O7r
-574,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816008 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-02-06,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,tHdEVf
-575,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816009 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-02-07,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,R9oM8B
-576,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816010 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-02-09,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,Bsq9aU
-577,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816011 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-06,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,j0RTUt
-578,0,Direct Advertiser,001D000000yvpHGIAY,Miele Company Ltd,Via Agency,Booking Agency,TCS Media Planning & Buying Ltd,TCS Media Planning & Buying Ltd,Melanie Levene,DM Display,Normal,TBC,54316501 Miele Laundry,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-02-14,,N,20x3,,,C,  Gtd FH,,0,0,0,8580,0,KH3Vfg
-579,0,Direct Advertiser,001D000000yvpHGIAY,Miele Company Ltd,Via Agency,Booking Agency,TCS Media Planning & Buying Ltd,TCS Media Planning & Buying Ltd,Melanie Levene,DM Display,Normal,TBC,54316502 Miele Laundry,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-03-07,,N,20x3,,,C,  Gtd FH,,0,0,0,8580,0,F3h6Ba
-580,0,Direct Advertiser,001D000000yvpHGIAY,Miele Company Ltd,Via Agency,Booking Agency,TCS Media Planning & Buying Ltd,TCS Media Planning & Buying Ltd,Melanie Levene,DM Display,Normal,TBC,54316503 Miele Laundry,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-03-28,,N,20x3,,,C,  Gtd FH,,0,0,0,8580,0,ZNs0CW
-581,0,Direct Advertiser,001D000000yvpHGIAY,Miele Company Ltd,Via Agency,Booking Agency,TCS Media Planning & Buying Ltd,TCS Media Planning & Buying Ltd,Melanie Levene,DM Display,Normal,TBC,54316504 Miele Laundry,,Mark Keynes,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-04-04,,N,20x3,,,C,  Gtd FH,,0,0,0,8580,0,i8RKg5
-582,0,Direct Advertiser,001D000000j2n70IAA,Bupa,Via Agency,Booking Agency,MEC,MEC,Louis Mayne,DM Display,Normal,TBC,54321502,,Ben Harrison,Mail Display Trading Team A,Daily Mail,Daily Mail Display,Good Health MD,None,01. National,2015-02-24,,N,25x4,,,C,  Good Health,,0,0,0,13000,0,DA86Di
-583,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816012 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-07,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,0OuTNR
-584,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816013 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-09,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,DngxE0
-585,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816014 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-04-10,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,sDNAxX
-586,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816015 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-04-11,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,37S197
-587,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816016 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-08,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,VPHzN8
-588,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816017 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-09,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,m2r7b4
-589,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816018 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-11,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,w7HXfZ
-590,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816019 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-15,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,tCJ8Lh
-591,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816020 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-16,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,PzCRzM
-592,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816021 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-18,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,tHztRE
-593,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816022 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-22,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,FmxpEf
-594,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816023 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-23,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,Omcq7M
-595,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816024 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-05-25,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,qIWOQG
-596,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816029 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-07-17,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,xepUd8
-597,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816030 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-07-18,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,yDceJG
-598,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816031 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-07-24,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,oyUxnV
-599,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816032 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-07-25,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,7fvKUp
-600,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816033 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-07-31,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,Bt5mSt
-601,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816034 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-01,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,LroVID
-602,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816035 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-03,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,cMLIcF
-603,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816036 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-21,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,QIqx5C
-604,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199601,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-11,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,fFtjtW
-605,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199602,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-12,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,rwXcjT
-606,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199603,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-03-13,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,aQ59l8
-607,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199604,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-16,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,l1hQkO
-608,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199605,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-17,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,wxmidR
-609,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199606,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-18,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,fH6Ofa
-610,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199607,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-06-19,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,QzHvER
-611,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199608,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-22,,N,15x2,,,C,BPS  ANNIVERSARY SITE,,0,0,0,5250,0,9kT7f8
-612,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199609,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-04-09,,N,,20,2,C,  G'TEE HORSE RACING EDITORIAL,,0,0,0,6240,0,FAZtCp
-613,0,Client,001D000000l5TfeIAE,BET365,Via Agency,Booking Agency,Mercer Street Marketing,Mercer Street Marketing,Iain Cairns,DM Display,Normal,TBC,54199610,,Howard Anson,Mail Display Manchester,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-04-10,,N,,20,2,C,  G'TEE HORSE RACING EDITORIAL,,0,0,0,6240,0,8SJd7j
-614,0,Client,001D000000sPLijIAG,Skiset,Via Agency,Booking Agency,Black Diamond,Black Diamond,Arabella Arthy,DM Display,Normal,TBC,54199903 3x7 colour strip for Skiset,,Emma Barnes,Mail Display Client Team Travel,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-02-04,,N,,3,7,C," R FH, RH, colour daily mail. If Travel is available and the ad wont be stacked under another please feel free to move to Travel page.",,0,0,0,2803.5,0,ohOQtw
-615,0,Client,001D000000sPLijIAG,Skiset,Via Agency,Booking Agency,Black Diamond,Black Diamond,Arabella Arthy,DM Display,Normal,TBC,54199904 3x7 colour strip for Skiset,,Emma Barnes,Mail Display Client Team Travel,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-02-11,,N,,3,7,C," R FH, RH, colour daily mail. If Travel is available and the ad wont be stacked under another please feel free to move to Travel page.",,0,0,0,2803.5,0,yoS1Ci
-616,0,Client,001D000000sPLijIAG,Skiset,Via Agency,Booking Agency,Black Diamond,Black Diamond,Arabella Arthy,DM Display,Normal,TBC,54199905 3x7 colour strip for Skiset,,Emma Barnes,Mail Display Client Team Travel,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-02-25,,N,,3,7,C," R FH, RH, colour daily mail. If Travel is available and the ad wont be stacked under another please feel free to move to Travel page.",,0,0,0,2803.5,0,EyU1LN
-617,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816037 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-22,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,dX85wW
-618,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816038 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-24,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,DWzFaS
-619,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816039 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-28,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,Y7T8qf
-620,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816040 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-29,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,ZbDNL1
-621,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816041 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-31,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,mpiNZc
-622,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816042 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-04,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,CrQkqS
-623,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816043 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-05,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,CUxS7C
-624,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816044 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-11,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,tpxoCz
-625,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816045 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-12,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,J06Mcf
-626,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816046 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-18,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,F5IvWg
-627,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816047 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-19,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,tcedku
-628,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816048 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-25,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,ISydKN
-629,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816049 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-09-26,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,x342B4
-630,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816050 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-02,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,Ho9a7l
-631,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816051 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-03,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,3FUjPN
-632,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816052 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-09,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,RGCL2C
-633,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816053 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-10,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,KSY8zz
-634,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816054 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-16,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,jTedV7
-635,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816055 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-17,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,mI2ecH
-636,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816056 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-30,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,cERSUP
-637,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816057 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-10-31,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,oxa1ZG
-638,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816058 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-20,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,orzQ1K
-639,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816059 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-21,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,OVbopt
-640,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816060 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-27,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,hRGf5P
-641,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816061 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-11-28,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,dBp6aI
-642,0,Client,001D000000sPLijIAG,Skiset,Via Agency,Booking Agency,Black Diamond,Black Diamond,Arabella Arthy,DM Display,Normal,TBC,54199908 10x7 colour on ski editorial,,Emma Barnes,Mail Display Client Team Travel,Daily Mail,Daily Mail Display,Travel MD,None,01. National,2015-02-07,,N,10x7,,,C, R GTD right hand travel under ski editorial. MUST appear on ski editorial.,,0,0,0,9450,0,gGoOMP
-643,0,Client,001D000000sPLijIAG,Skiset,Via Agency,Booking Agency,Black Diamond,Black Diamond,Arabella Arthy,DM Display,Normal,TBC,54199909 10x7 colour on ski editorial,,Emma Barnes,Mail Display Client Team Travel,Daily Mail,Daily Mail Display,Travel MD,None,01. National,2015-02-28,,N,10x7,,,C, R GTD right hand travel under ski editorial. MUST appear on ski editorial.,,0,0,0,9450,0,Bc7Msw
-644,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816062 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-19,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,0UZddC
-645,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816063 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-21,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,HV5UA0
-646,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816064 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-28,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,uxh2b5
-647,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816065 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-29,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,01Mmrv
-648,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816066 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-30,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,iMC5uQ
-649,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816067 Football,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-12-31,,N,,10,7,C,  Gtd 1st ad from back / 1st Telecom and solus on page,,0,0,0,9195.2,0,bR0yae
-650,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816311 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-05,,N,10x7,,,C,"  FH TAKEOVER - 1st of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,9195.2,0,reDMAX
-651,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816312 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-06,,N,10x7,,,C,"  FH TAKEOVER - 1st of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,9195.2,0,WktS5q
-652,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816317 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-05,,N,18x7,,,C,"  FH TAKEOVER - 4th of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,16551.36,0,x7nloM
-653,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816318 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-06,,N,18x7,,,C,"  FH TAKEOVER - 4th of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,16551.36,0,vtrKIS
-654,0,Client,001D000000lcQTYIA2,High Seat Ltd,Via Agency,Booking Agency,Hub-mdp Ltd,Hub-mdp Ltd,Neil Pickering,DM Display,Normal,TBC,54234715 furniture,,Nicola Hampton,Mail Display Manchester,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-03-14,,N,Full Page MD,,,C,  Mail order gtd,,0,0,0,16000,0,AjWxAY
-655,0,Client,001D000000lcQTYIA2,High Seat Ltd,Via Agency,Booking Agency,Hub-mdp Ltd,Hub-mdp Ltd,Neil Pickering,DM Display,Provisional,TBC,54234716 furniture,,Nicola Hampton,Mail Display Manchester,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-04-11,,N,Full Page MD,,,C,  Mail order gtd,,0,0,0,0,0,J1Lc2n
-656,0,Client,001D000000lcQTYIA2,High Seat Ltd,Via Agency,Booking Agency,Hub-mdp Ltd,Hub-mdp Ltd,Neil Pickering,DM Display,Provisional,TBC,54234717 furniture,,Nicola Hampton,Mail Display Manchester,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-05-09,,N,Full Page MD,,,C,  Mail order gtd,,0,0,0,0,0,5aOz2q
-657,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817601 Premier League Start of Season,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-07,,N,,10,7,C,"  Gtd 1st ad from back of Sport / 1st telecom and solus on page
-
-HOPING FOR MORE VOLUME TO ADD TO THIS DATE!",,0,0,0,9195.2,0,ovT3TZ
-658,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817602 Premier League Start of Season,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-15,,N,,10,7,C,"  Gtd 1st ad from back of Sport / 1st telecom and solus on page
-
-HOPING FOR MORE VOLUME TO ADD TO THIS DATE!",,0,0,0,9195.2,0,GCzVCO
-659,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53817603 Premier League Start of Season,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-08-17,,N,,10,7,C,"  Gtd 1st ad from back of Sport / 1st telecom and solus on page
-
-HOPING FOR MORE VOLUME TO ADD TO THIS DATE!",,0,0,0,9195.2,0,u19Lr2
-660,0,Client,001D000000l3tjTIAQ,Furniture Village,Via Agency,Booking Agency,TMW Ltd,TMW Ltd,Jane Turner,DM Display,Normal,TBC,54150607,,Laurissa Bickerton,Mail Display Manchester,Daily Mail,Weekend Magazine,ROM MD,None,01. National,2015-02-21,,N,Full Page MD,,,C,  ,,0,0,0,20742,0,tOcMu5
-661,0,Client,001D000000j2n7nIAA,Coral Eurobet Ltd,Via Agency,Booking Agency,The 7 Stars Llp,The 7 Stars Llp,Ken Mansfield,DM Display,Normal,TBC,54213101 Football,,Ben Harrison,Mail Display Trading Team C,Daily Mail,Daily Mail Display,Sport MD,None,01. National,2015-02-21,,N,,8,7,C,BPS  BPS,,0,0,0,9520,0,XNzZFS
-662,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816323 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-05,,N,25x4,,,C,"  FH TAKEOVER - 2nd of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,13136,0,rt7jjG
-663,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816324 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-06,,N,25x4,,,C,"  FH TAKEOVER - 2nd of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,13136,0,Eo6ikP
-664,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816329 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-05,,N,20x3,,,C,"  FH TAKEOVER - 3rd of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,7881.6,0,TBXhPz
-665,0,Direct Advertiser,001D000000j2msaIAA,BSkyB,Via Agency,Booking Agency,Mediacom,Mediacom,Adam Cluett,DM Display,Provisional,TBC,53816330 Champions League,,Danny Geelan,Mail Display Trading Team B,Daily Mail,Daily Mail Display,Front Half MD,None,01. National,2015-06-06,,N,20x3,,,C,"  FH TAKEOVER - 3rd of 4 ads
-
-No competitor activity within first two spreads after this takeover
-",,0,0,0,7881.6,0,A4hPYR
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
