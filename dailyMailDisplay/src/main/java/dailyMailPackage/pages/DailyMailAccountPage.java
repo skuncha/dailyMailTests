@@ -27,7 +27,7 @@ public class DailyMailAccountPage extends PageObject {
 	
 	long timeNow = System.currentTimeMillis();
 //	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
-	String url = "https://dmgsalescloud--systest.cs7.my.salesforce.com/";
+	String url = "https://dmgsalescloud--systemtest.cs8.my.salesforce.com/";
 		
 	String order,rowNum;
 	String billingType = "Agency";
@@ -87,7 +87,7 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade selectWidth()     		{ return element(By.xpath("//*[@id='Order.Schedule.Material:material.bookedWidth']"));			}
    
     private WebElementFacade selectInsertion()   { return element(By.xpath("//*[@id='ActivePriceDetailView']/label[3]"));							}
-    private WebElementFacade selectedInsertionDate(){ return element(By.xpath("//fieldset/div[2]/div/div/div[1]/div/table/thead/tr/th[1]/a"));		}
+    private WebElementFacade selectedInsertionDate(){ return element(By.xpath("//fieldset/div[2]/div/div/div[1]/div[2]/table/thead/tr/th[2]/a"));		}
     /******DM DISPLAY and TMOS *****/
     private WebElementFacade selectBasePrice()	 { return element(By.xpath("//tbody/tr[14]/td[1]/a"));												}
     private WebElementFacade supplyPriceType()	 { return element(By.xpath("//*[@id=':overridePriceDetail']"));										}
@@ -528,13 +528,14 @@ public class DailyMailAccountPage extends PageObject {
 						{
 									System.out.println("       " +rowNum + " ---> " + "Sorry! either DATA/Latency issue please check test report for details" );
 									Thucydides.takeScreenshot();
+									try {
+								    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
+								    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
+								    	      getDriver().switchTo().alert().accept();
+								    	 }
+								    	 catch (Exception x) {}
 						}
-						try {
-					    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
-					    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
-					    	      getDriver().switchTo().alert().accept();
-					    	 }
-					    	 catch (Exception x) {}
+						
 				} 
 	}		
 }
