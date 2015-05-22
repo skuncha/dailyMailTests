@@ -27,7 +27,8 @@ public class DailyMailAccountPage extends PageObject {
 	
 	long timeNow = System.currentTimeMillis();
 //	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
-	String url = "https://dmgsalescloud--systemtest.cs8.my.salesforce.com/";
+//	String url = "https://dmgsalescloud--systemtest.cs8.my.salesforce.com/";
+	String url = "https://cs8.salesforce.com/";
 		
 	String order,rowNum;
 	String billingType = "Agency";
@@ -446,14 +447,14 @@ public class DailyMailAccountPage extends PageObject {
 					    	
 									 if (packageType.equalsIgnoreCase("DM Display") || packageType.equalsIgnoreCase("TMOS Display")) 
 									 {
-										 /* selectPrice().click();
+										 	selectPrice().click();
 							    	 		waitFor(2).seconds();
 							    	 		selectRevenue().sendKeys(record.get("revenue"));
 							    	 		waitFor(2).seconds();
 							    	 		updateRevenue().click(); 
-							    	 		waitFor(5).seconds();*/
+							    	 		waitFor(5).seconds();
 										 
-							    		 selectPrice().click();
+							    		/* selectPrice().click();
 							    		 waitFor(3).seconds();
 							    		 selectInsertion().click();
 							    		 waitFor(2).seconds();
@@ -466,7 +467,7 @@ public class DailyMailAccountPage extends PageObject {
 							    		 supplyPrice().type(record.get("revenue"));
 							    		 waitFor(2).seconds();
 							    		 updateInsLevelRevenue().click();
-							    		 waitFor(4).seconds();
+							    		 waitFor(4).seconds();*/
 									 }
 									 if (packageType.equalsIgnoreCase("MailPlus")) {
 							    		 selectPrice().click();
