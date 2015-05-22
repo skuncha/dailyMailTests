@@ -1,5 +1,5 @@
 !-- Objective is to migrate inflight Daily Mail Display Orders to CCI via glue order plugin
-!-- srinivasa.kuncha@mailnewspapers.co.uk.mail.systemtest    test1234
+!-- srinivasa.kuncha@mailnewspapers.co.uk.fcuat   amma1234
 
 Meta:
 @author Srinivasa Kuncha
@@ -22,5 +22,5 @@ When Sales rep search for customer account and place order using csv [file]
 Then Sales rep should see customer account with associated orders in glue
 
 Examples:
-|username										|password				|file											|
-|srinivasa.kuncha@mailnewspapers.co.uk.fcuat	|amma1234				|src\main\resources\datamigration.csv			|
+|username												|password				|file											|
+|srinivasa.kuncha@mailnewspapers.co.uk.mail.systemtest	|test1234				|src\main\resources\datamigration.csv			|
