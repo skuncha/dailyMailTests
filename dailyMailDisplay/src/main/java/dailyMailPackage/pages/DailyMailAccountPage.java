@@ -526,14 +526,14 @@ public class DailyMailAccountPage extends PageObject {
 	  /*************************************************************************************************/
 					} catch (Exception e)
 						{
+						try {
+					    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
+					    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
+					    	      getDriver().switchTo().alert().accept();
+					    	 }
+					    	 catch (Exception x) {}
 									System.out.println("       " +rowNum + " ---> " + "Sorry! either DATA/Latency issue please check test report for details" );
 									Thucydides.takeScreenshot();
-									try {
-								    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
-								    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
-								    	      getDriver().switchTo().alert().accept();
-								    	 }
-								    	 catch (Exception x) {}
 						}
 						
 				} 
