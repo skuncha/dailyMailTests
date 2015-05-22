@@ -47,6 +47,7 @@ public class DailyMailAccountPage extends PageObject {
 	private WebElementFacade createDirectOrder() 	{ return element(By.cssSelector("input[value='Create Direct Order']"));							}
 	private WebElementFacade selectAgencyType()     { return element(By.id("j_id0:j_id1:i:f:pb:d:Agency_Type.input"));								}
 	private WebElementFacade bookingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Booking_AgenciesList.input"));						}
+
 	private WebElementFacade parentBookingSel() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:ParentBooking_Agency.input"));						}
 	private WebElementFacade billingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Selection.input"));						}
 	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options.input"));							}
@@ -202,9 +203,9 @@ public class DailyMailAccountPage extends PageObject {
 												clickNext().click();
 										}   catch (Exception exp){clickNext().click();}
 												waitFor(3).seconds();
-											bookingSelection().selectByVisibleText(record.get("bookingAgency"));
+											/*bookingSelection().selectByVisibleText(record.get("bookingAgency"));
 											clickNext().click();
-												waitFor(3).seconds();
+												waitFor(3).seconds();*/
 											selectBillingAgency().selectByVisibleText(record.get("billingAgency"));
 												waitFor(1).second();
 											clickNext().click();
