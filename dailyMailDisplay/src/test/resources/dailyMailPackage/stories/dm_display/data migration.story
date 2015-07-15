@@ -23,4 +23,4 @@ Then Sales rep should see customer account with associated orders in glue
 
 Examples:
 |username												|password				|file											|
-|srinivasa.kuncha@mailnewspapers.co.uk.fcuat 			|amma1234				|src\main\resources\datamigration.csv			|
+|srinivasa.kuncha@mailnewspapers.co.uk.prodmirror		|amma1234				|src\main\resources\datamigration.csv			|

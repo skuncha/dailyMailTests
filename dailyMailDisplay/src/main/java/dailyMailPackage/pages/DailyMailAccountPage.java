@@ -28,7 +28,7 @@ public class DailyMailAccountPage extends PageObject {
 	long timeNow = System.currentTimeMillis();
 //	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
 //	String url = "https://dmgsalescloud--systemtest.cs8.my.salesforce.com/";
-	String url = "https://cs8.salesforce.com/"; // fcuat
+	String url = "https://cs8.salesforce.com/"; // prodmirror
 		
 	String order,rowNum;
 	String billingType = "Agency";
