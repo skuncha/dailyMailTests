@@ -28,7 +28,7 @@ public class DailyMailAccountPage extends PageObject {
 	long timeNow = System.currentTimeMillis();
 //	String url = "https://dmgsalescloud--prodmirror.cs7.my.salesforce.com/";
 //	String url = "https://dmgsalescloud--systemtest.cs8.my.salesforce.com/";
-	String url = "https://cs8.salesforce.com/"; // prodmirror
+	String url = "https://dmgsalescloud--prodmirror.cs80.my.salesforce.com/"; // prodmirror
 		
 	String order,rowNum;
 	String billingType = "Agency";
@@ -48,8 +48,8 @@ public class DailyMailAccountPage extends PageObject {
 	private WebElementFacade selectAgencyType()     { return element(By.id("j_id0:j_id1:i:f:pb:d:Agency_Type.input"));								}
 	private WebElementFacade bookingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Booking_AgenciesList.input"));						}
 	private WebElementFacade parentBookingSel() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:ParentBooking_Agency.input"));						}
-	private WebElementFacade billingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Selection.input"));						}
-	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options.input"));							}
+	private WebElementFacade billingSelection() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Selection.input"));						} 
+	private WebElementFacade billingOption() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options.input"));							} 
 	private WebElementFacade billingOption1() 		{ return element(By.id("j_id0:j_id1:i:f:pb:d:Billing_Options_0.input"));						}
 	private WebElementFacade selectBillingAgency() 	{ return element(By.id("j_id0:j_id1:i:f:pb:d:BillingAgencies.input"));							}
 	private WebElementFacade selectBillingAgency1() { return element(By.id("j_id0:j_id1:i:f:pb:d:SelectBilling_Agency.input"));						}	
@@ -75,11 +75,11 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade distribution()   	 	{ return element(By.id("rder.Schedule:sched.distributionCode"));								}
     private WebElementFacade noOfInserts()   	 	{ return element(By.id("Order.Schedule:sched.noOfInserts"));									}
 //    private WebElementFacade saveOrder()   	     	{ return element(By.xpath("//nav[button='Save']/button[2]"));								}
-    private WebElementFacade selectModule()   	 	{ return element(By.id("Order.Schedule.Material:material.moduleCode"));									}
-    private WebElementFacade productionNote()   	{ return element(By.id("Order.Schedule.Material:material.productionNote"));								}
+    private WebElementFacade selectModule()   	 	{ return element(By.id("Order.Material:material.moduleCode"));									}
+    private WebElementFacade productionNote()   	{ return element(By.id("Order.Material:material.productionNote"));								}
     private WebElementFacade ABCopySplit()			{ return element(By.id(":propval.propertyBoolValue"));											}
     private WebElementFacade regionalCopySplit()   	{ return element(By.id("Order.Properties:Regional Copy Split"));								}
-    private WebElementFacade color()   				{ return element(By.id("Order.Schedule.Material:material.bookedCMYKColors"));					}
+    private WebElementFacade color()   				{ return element(By.id("Order.Material:material.bookedCMYKColors"));					}
     private WebElementFacade selectPrice()   	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[3]/div[1]/h4/a/span"));		}
     private WebElementFacade selectRevenue()   	 	{ return element(By.id("Order.Price:UserRevenue"));												}
     private WebElementFacade updateRevenue()   	 	{ return element(By.xpath("//fieldset/div/div[2]/div/div/span/button"));						}
@@ -194,7 +194,7 @@ public class DailyMailAccountPage extends PageObject {
 										}
 										if (selectionType.equalsIgnoreCase("Direct"))
 										{
-											billingOption().selectByVisibleText(billingType);
+											billingSelection().selectByVisibleText(billingType);
 											clickNext().click();
 											waitFor(1).second();
 										}
@@ -454,14 +454,14 @@ public class DailyMailAccountPage extends PageObject {
 					    	
 									 if (packageType.equalsIgnoreCase("DM Display") || packageType.equalsIgnoreCase("TMOS Display")) 
 									 {
-										 	selectPrice().click();
+										 	/*selectPrice().click();
 							    	 		waitFor(2).seconds();
 							    	 		selectRevenue().sendKeys(record.get("revenue"));
 							    	 		waitFor(2).seconds();
 							    	 		updateRevenue().click(); 
 							    	 		waitFor(5).seconds();
-										 
-							    		/* selectPrice().click();
+										 */
+							    		 selectPrice().click();
 							    		 waitFor(3).seconds();
 							    		 selectInsertion().click();
 							    		 waitFor(2).seconds();
@@ -474,7 +474,7 @@ public class DailyMailAccountPage extends PageObject {
 							    		 supplyPrice().type(record.get("revenue"));
 							    		 waitFor(2).seconds();
 							    		 updateInsLevelRevenue().click();
-							    		 waitFor(4).seconds();*/
+							    		 waitFor(4).seconds();
 									 }
 									 if (packageType.equalsIgnoreCase("MailPlus")) {
 							    		 selectPrice().click();
