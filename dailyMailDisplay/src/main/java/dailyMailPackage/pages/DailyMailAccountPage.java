@@ -85,11 +85,11 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade updateRevenue()   	 	{ return element(By.xpath("//fieldset/div/div[2]/div/div/span/button"));						}
     private WebElementFacade acceptOrder()   	 	{ return element(By.xpath("//nav[button='Accept']/button[3]"));									} 
     private WebElementFacade orderID()      	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[1]/div[2]/div/div[2]/fieldset/div[1]/div/p")); }
-    private WebElementFacade selectHeight()     	{ return element(By.xpath("//*[@id='OOrder.Schedule.Material:material.bookedHeight']"));			}
+    private WebElementFacade selectHeight()     	{ return element(By.xpath("//*[@id='OOrder.Schedule.Material:material.bookedHeight']"));		}
     private WebElementFacade selectWidth()     		{ return element(By.xpath("//*[@id='Order.Schedule.Material:material.bookedHeight']"));			}
    
     private WebElementFacade selectInsertion()   { return element(By.xpath("//*[@id='ActivePriceDetailView']/label[3]"));							}
-    private WebElementFacade selectedInsertionDate(){ return element(By.xpath("//fieldset/div[2]/div/div/div[1]/div[2]/table/thead/tr/th[2]/a"));		}
+    private WebElementFacade selectedInsertionDate(){ return element(By.xpath("//fieldset/div[2]/div/div/div[1]/div[2]/table/thead/tr/th[2]/a"));	}
     /******DM DISPLAY and TMOS *****/
     private WebElementFacade selectBasePrice()	 { return element(By.xpath("//tbody/tr[14]/td[1]/a"));												}
     private WebElementFacade supplyPriceType()	 { return element(By.xpath("//*[@id=':overridePriceDetail']"));										}
@@ -277,7 +277,7 @@ public class DailyMailAccountPage extends PageObject {
 								waitFor(1).seconds();
 							finish().click();
 		/************** Launch OrderPlugin and Create Order*************************************************/	
-							 	 waitFor(14).seconds();
+							 	 waitFor(12).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
@@ -314,7 +314,7 @@ public class DailyMailAccountPage extends PageObject {
 									 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirectMP);
 									 getDriver().get(OrderURL);
 								 }
-								 waitFor(13).seconds();
+								 waitFor(12).seconds();
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
@@ -461,7 +461,7 @@ public class DailyMailAccountPage extends PageObject {
 							    	 		updateRevenue().click(); 
 							    	 		waitFor(5).seconds();
 										 */
-							    		 selectPrice().click();
+							    		 selectPrice().click(); 
 							    		 waitFor(3).seconds();
 							    		 selectInsertion().click();
 							    		 waitFor(2).seconds();
