@@ -144,10 +144,10 @@ public class DailyMailAccountPage extends PageObject {
 						    	      getDriver().switchTo().alert().accept();
 						    	 }
 						    	 catch (Exception x) {}
-								waitFor(8).seconds();
+								waitFor(5).seconds();
 							Thucydides.takeScreenshot();
 							createDirectOrder().click();
-								waitFor(5).seconds();
+								waitFor(4).seconds();
 								if (str.equalsIgnoreCase("Brand"))
 								{
 										String selectionType = record.get("billingSelection");
@@ -363,13 +363,13 @@ public class DailyMailAccountPage extends PageObject {
 									 {
 //										 title().selectByVisibleText(record.get("title"));
 										 selectPublication().selectByVisibleText(record.get("publication"));
-								    	 waitFor(2).seconds();
+								    	 waitFor(3).seconds();
 								    	 selectSection().selectByVisibleText(record.get("section"));
 								    	 waitFor(2).seconds();
-								    	 selectZone().selectByVisibleText(record.get("zones"));
-								    	 waitFor(4).seconds();
 								    	 selectSubSection().selectByVisibleText(record.get("subsection")); // subsection
 								    	 waitFor(5).seconds();
+								    	 selectZone().selectByVisibleText(record.get("zones"));
+								    	 waitFor(4).seconds();
 								    	 	String colour = record.get("colour");	 	
 												 if (colour.equals("M"))
 												 {
@@ -466,9 +466,9 @@ public class DailyMailAccountPage extends PageObject {
 							    		 selectInsertion().click();
 							    		 waitFor(2).seconds();
 							    		 selectedInsertionDate().click();
-							    		 waitFor(3).seconds();
+							    		 waitFor(2).seconds();
 							    		 selectBasePrice().click();
-							    		 waitFor(3).seconds();
+							    		 waitFor(2).seconds();
 							    		 supplyPriceType().selectByVisibleText("UserRevenue");
 							    		 waitFor(1).seconds();
 							    		 supplyPrice().type(record.get("revenue"));
@@ -534,14 +534,15 @@ public class DailyMailAccountPage extends PageObject {
 	  /*************************************************************************************************/
 					} catch (Exception e)
 						{
+						System.out.println("       " +rowNum + " ---> " + "Sorry! either DATA/Latency issue please check test report for details" );
+						Thucydides.takeScreenshot();
 						try {
 					    	 WebDriverWait wait1 = new WebDriverWait(getDriver(), 3);
 					    	 if(wait1.until(ExpectedConditions.alertIsPresent())!=null)
 					    	      getDriver().switchTo().alert().accept();
 					    	 }
 					    	 catch (Exception x) {}
-									System.out.println("       " +rowNum + " ---> " + "Sorry! either DATA/Latency issue please check test report for details" );
-									Thucydides.takeScreenshot();
+									
 						}
 						
 				} 
