@@ -277,7 +277,7 @@ public class DailyMailAccountPage extends PageObject {
 								waitFor(1).seconds();
 							finish().click();
 		/************** Launch OrderPlugin and Create Order*************************************************/	
-							 	 waitFor(12).seconds();
+							 	 waitFor(8).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
@@ -314,7 +314,7 @@ public class DailyMailAccountPage extends PageObject {
 									 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirectMP);
 									 getDriver().get(OrderURL);
 								 }
-								 waitFor(12).seconds();
+								 waitFor(10).seconds();
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
@@ -468,11 +468,11 @@ public class DailyMailAccountPage extends PageObject {
 							    		 selectedInsertionDate().click();
 							    		 waitFor(3).seconds();
 							    		 selectBasePrice().click();
-							    		 waitFor(5).seconds();
+							    		 waitFor(3).seconds();
 							    		 supplyPriceType().selectByVisibleText("UserRevenue");
-							    		 waitFor(2).seconds();
+							    		 waitFor(1).seconds();
 							    		 supplyPrice().type(record.get("revenue"));
-							    		 waitFor(2).seconds();
+							    		 waitFor(1).seconds();
 							    		 updateInsLevelRevenue().click();
 							    		 waitFor(4).seconds();
 									 }
@@ -530,7 +530,7 @@ public class DailyMailAccountPage extends PageObject {
 								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();*/
 					    		 	} catch (Exception e) {}
 					    	 }
-					    	 waitFor(8).seconds();
+					    	 waitFor(6).seconds();
 	  /*************************************************************************************************/
 					} catch (Exception e)
 						{
