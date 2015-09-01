@@ -369,7 +369,7 @@ public class DailyMailAccountPage extends PageObject {
 								    	 selectZone().selectByVisibleText(record.get("zones"));
 								    	 waitFor(4).seconds();
 								    	 selectSubSection().selectByVisibleText(record.get("subsection")); // subsection
-								    	 waitFor(6).seconds();
+								    	 waitFor(5).seconds();
 								    	 	String colour = record.get("colour");	 	
 												 if (colour.equals("M"))
 												 {
@@ -478,17 +478,17 @@ public class DailyMailAccountPage extends PageObject {
 									 }
 									 if (packageType.equalsIgnoreCase("MailPlus")) {
 							    		 selectPrice().click();
-							    		 waitFor(4).seconds();
+							    		 waitFor(2).seconds();
 							    		 selectInsertion().click();
-							    		 waitFor(4).seconds();
+							    		 waitFor(2).seconds();
 							    		 insertionDateMP().click();
 							    		 waitFor(3).seconds();
 							    		 selectBasePriceMP().click();
-							    		 waitFor(4).seconds();
+							    		 waitFor(2).seconds();
 							    		 supplyPriceType().selectByVisibleText("UserRevenue");
-							    		 waitFor(2).seconds();
+							    		 waitFor(1).seconds();
 							    		 supplyPriceMP().type(record.get("revenue"));
-							    		 waitFor(2).seconds();
+							    		 waitFor(1).seconds();
 							    		 updateRevenueMP().click();
 							    		 waitFor(4).seconds();
 							    	 Thucydides.takeScreenshot();	
@@ -530,7 +530,7 @@ public class DailyMailAccountPage extends PageObject {
 								    	 prepaymentwindow2.findElement(By.xpath("//input[@value='OK']")).click();*/
 					    		 	} catch (Exception e) {}
 					    	 }
-					    	 waitFor(6).seconds();
+					    	 waitFor(5).seconds();
 	  /*************************************************************************************************/
 					} catch (Exception e)
 						{
