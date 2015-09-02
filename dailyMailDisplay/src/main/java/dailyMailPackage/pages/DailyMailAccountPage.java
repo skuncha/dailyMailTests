@@ -369,10 +369,8 @@ public class DailyMailAccountPage extends PageObject {
 								    	 waitFor(3).seconds();
 								    	 selectSubSection().selectByVisibleText(record.get("subsection")); // subsection
 								    	 waitFor(4).seconds();
-								    	try{
 								    	 selectZone().selectByVisibleText(record.get("zones"));
-								    	 waitFor(4).seconds();
-								    	} catch (NoSuchElementException e){ }
+								    	 waitFor(5).seconds();
 								    	 	String colour = record.get("colour");	 	
 												 if (colour.equals("M"))
 												 {
