@@ -397,8 +397,11 @@ public class DailyMailAccountPage extends PageObject {
 												}
 								
 											String zoneType = record.get("zones");
-								 		    rcs = record.get("regionalCopySplit");
-								 		    		rcs = rcs.replace('/', '\\'); System.out.println("the values that is supplied is : ----------------------------->"+rcs);
+											/*rcs = rcs.replace('/', '\\'); System.out.println("the values that is supplied is : ----------------------------->"+rcs);*/
+											
+								/******************************************************************************************************/
+								 /*		    rcs = record.get("regionalCopySplit");
+								 		    		/
 										 	    if (rcs.equalsIgnoreCase("England & Walescot")){
 											 			rcs = "England & Wales\\Scot";
 										 		}  
@@ -437,12 +440,10 @@ public class DailyMailAccountPage extends PageObject {
 											 		if (!" ".equals(rcs))
 											 		{
 											 			 waitFor(1).second();
-											 			 try{
 											 			 regionalCopySplit().selectByVisibleText(rcs);
 														 waitFor(2).seconds();
-											 			 } catch (NoSuchElementException NoE) {}
 											 		}	
-											 	}
+											 	}*/
 										 		String ABcopySplitValue = record.get("copySplit");
 										 		if (ABcopySplitValue.equalsIgnoreCase("Y"))
 										 		{
