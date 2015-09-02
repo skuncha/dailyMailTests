@@ -315,7 +315,7 @@ public class DailyMailAccountPage extends PageObject {
 									 String OrderURL=firstsplit[0].concat(acode).concat(add).concat(secondpartsplit[1]).concat(redirectMP);
 									 getDriver().get(OrderURL);
 								 }
-								 waitFor(10).seconds();
+								 waitFor(12).seconds();
 		/************************************ Supply Order Details ******************************************/
 					    	 orderPurchaseNo().sendKeys(record.get("PONumber"));
 					    	 orderNote().sendKeys(record.get("orderNote"));
