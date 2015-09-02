@@ -3,6 +3,7 @@ package dailyMailPackage.pages;
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
+import java.util.NoSuchElementException;
 
 import net.thucydides.core.Thucydides;
 import net.thucydides.core.annotations.DefaultUrl;
@@ -368,8 +369,10 @@ public class DailyMailAccountPage extends PageObject {
 								    	 waitFor(3).seconds();
 								    	 selectSubSection().selectByVisibleText(record.get("subsection")); // subsection
 								    	 waitFor(4).seconds();
+								    	try{
 								    	 selectZone().selectByVisibleText(record.get("zones"));
 								    	 waitFor(4).seconds();
+								    	} catch (NoSuchElementException e){ }
 								    	 	String colour = record.get("colour");	 	
 												 if (colour.equals("M"))
 												 {
