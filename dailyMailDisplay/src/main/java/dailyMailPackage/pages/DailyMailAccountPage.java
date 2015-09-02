@@ -85,8 +85,8 @@ public class DailyMailAccountPage extends PageObject {
     private WebElementFacade updateRevenue()   	 	{ return element(By.xpath("//fieldset/div/div[2]/div/div/span/button"));						}
     private WebElementFacade acceptOrder()   	 	{ return element(By.xpath("//nav[button='Accept']/button[3]"));									} 
     private WebElementFacade orderID()      	 	{ return element(By.xpath(".//*[@id='SchedulingAccordion']/div/div[1]/div[2]/div/div[2]/fieldset/div[1]/div/p")); }
-    private WebElementFacade selectHeight()     	{ return element(By.xpath("//*[@id='OOrder.Schedule.Material:material.bookedHeight']"));		}
-    private WebElementFacade selectWidth()     		{ return element(By.xpath("//*[@id='Order.Schedule.Material:material.bookedHeight']"));			}
+    private WebElementFacade selectHeight()     	{ return element(By.xpath("//*[@id='Order.Material:material.bookedHeight']"));		}
+    private WebElementFacade selectWidth()     		{ return element(By.xpath("//*[@id='Order.Material:material.bookedWidth']"));			}
    
     private WebElementFacade selectInsertion()   { return element(By.xpath("//*[@id='ActivePriceDetailView']/label[3]"));							}
     private WebElementFacade selectedInsertionDate(){ return element(By.xpath("//fieldset/div[2]/div/div/div[1]/div[2]/table/thead/tr/th[2]/a"));	}
@@ -365,9 +365,9 @@ public class DailyMailAccountPage extends PageObject {
 										 selectPublication().selectByVisibleText(record.get("publication"));
 								    	 waitFor(3).seconds();
 								    	 selectSection().selectByVisibleText(record.get("section"));
-								    	 waitFor(2).seconds();
+								    	 waitFor(3).seconds();
 								    	 selectSubSection().selectByVisibleText(record.get("subsection")); // subsection
-								    	 waitFor(5).seconds();
+								    	 waitFor(4).seconds();
 								    	 selectZone().selectByVisibleText(record.get("zones"));
 								    	 waitFor(4).seconds();
 								    	 	String colour = record.get("colour");	 	
@@ -385,11 +385,11 @@ public class DailyMailAccountPage extends PageObject {
 												else
 												{
 														selectHeight().sendKeys(record.get("height"));
-														waitFor(3).seconds();
+														waitFor(2).seconds();
 														selectWidth().clear();
 														waitFor(2).seconds();
 														selectWidth().typeAndEnter(record.get("width"));
-														waitFor(4).seconds();
+														waitFor(2).seconds();
 														productionNote().clear();
 												}
 								
