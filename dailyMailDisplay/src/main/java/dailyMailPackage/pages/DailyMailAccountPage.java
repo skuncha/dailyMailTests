@@ -278,7 +278,7 @@ public class DailyMailAccountPage extends PageObject {
 								waitFor(1).seconds();
 							finish().click();
 		/************** Launch OrderPlugin and Create Order*************************************************/	
-							 	 waitFor(8).seconds();
+							 	 waitFor(10).seconds();
 					     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
@@ -370,7 +370,7 @@ public class DailyMailAccountPage extends PageObject {
 								    	 selectSubSection().selectByVisibleText(record.get("subsection")); // subsection
 								    	 waitFor(4).seconds();
 								    	 selectZone().selectByVisibleText(record.get("zones"));
-								    	 waitFor(5).seconds();
+								    	 waitFor(6).seconds();
 								    	 	String colour = record.get("colour");	 	
 												 if (colour.equals("M"))
 												 {
