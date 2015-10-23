@@ -1,9 +1,4 @@
-!-- Objective is to migrate inflight Daily Mail Display Orders to CCI via glue order plugin
-!-- srinivasa.kuncha@mailnewspapers.co.uk.fcuat   amma1234
-
-Meta:
-@author Srinivasa Kuncha
-@tags feature: DM Display Orders
+!-- This is used to create Orders for existing customers
 
 Narrative:
 In order to migrate inflight Daily Mail Display Orders
